@@ -446,6 +446,9 @@ video {
 .relative {
     position: relative;
 }
+.sticky {
+    position: sticky;
+}
 .inset-0 {
     inset: 0px;
 }
@@ -464,8 +467,17 @@ video {
 .top-\[-1\.4px\] {
     top: -1.4px;
 }
+.top-full {
+    top: 100%;
+}
 .z-20 {
     z-index: 20;
+}
+.col-span-1 {
+    grid-column: span 1 / span 1;
+}
+.col-span-2 {
+    grid-column: span 2 / span 2;
 }
 .col-span-4 {
     grid-column: span 4 / span 4;
@@ -481,8 +493,14 @@ video {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
+.mb-2 {
+    margin-bottom: 0.5rem;
+}
 .block {
     display: block;
+}
+.inline {
+    display: inline;
 }
 .flex {
     display: flex;
@@ -515,6 +533,9 @@ video {
 .transform {
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+.grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
 .grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -546,8 +567,14 @@ video {
 .whitespace-pre {
     white-space: pre;
 }
+.rounded-2xl {
+    border-radius: 1rem;
+}
 .border {
     border-width: 1px;
+}
+.border-b {
+    border-bottom-width: 1px;
 }
 .border-b-0 {
     border-bottom-width: 0px;
@@ -565,9 +592,17 @@ video {
 .bg-\[var\(--bg-color\)\] {
     background-color: var(--bg-color);
 }
+.bg-white {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
 .object-cover {
     -o-object-fit: cover;
        object-fit: cover;
+}
+.object-center {
+    -o-object-position: center;
+       object-position: center;
 }
 .p-2 {
     padding: 0.5rem;
@@ -578,6 +613,9 @@ video {
 .p-5 {
     padding: 1.25rem;
 }
+.p-8 {
+    padding: 2rem;
+}
 .px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -585,6 +623,10 @@ video {
 .px-2 {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+}
+.px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 .px-5 {
     padding-left: 1.25rem;
@@ -594,8 +636,25 @@ video {
     padding-left: 2rem;
     padding-right: 2rem;
 }
+.py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.pb-2 {
+    padding-bottom: 0.5rem;
+}
+.pb-20 {
+    padding-bottom: 5rem;
+}
 .pb-5 {
     padding-bottom: 1.25rem;
+}
+.pb-6 {
+    padding-bottom: 1.5rem;
 }
 .pt-2 {
     padding-top: 0.5rem;
@@ -609,11 +668,42 @@ video {
 .text-right {
     text-align: right;
 }
+.text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+}
+.text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+.text-sm\/6 {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+}
+.text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+.font-bold {
+    font-weight: 700;
+}
+.font-extrabold {
+    font-weight: 800;
+}
+.font-light {
+    font-weight: 300;
+}
+.font-normal {
+    font-weight: 400;
+}
 .font-semibold {
     font-weight: 600;
 }
 .font-thin {
     font-weight: 100;
+}
+.uppercase {
+    text-transform: uppercase;
 }
 .italic {
     font-style: italic;
@@ -626,6 +716,13 @@ video {
 }
 .leading-none {
     line-height: 1;
+}
+.tracking-wide {
+    letter-spacing: 0.025em;
+}
+.outline-none {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
 }
 .filter {
     filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -687,16 +784,35 @@ input:focus, textarea:focus {
     background-color: var(--featured-color);
 }
 
+
+/* Back to Top Grid */
+.major-funders-grid {
+    grid-template-columns: 12rem 1fr 1fr;
+  }
+.hover\:border-b-\[var\(--featured-color\)\]:hover {
+    border-bottom-color: var(--featured-color);
+}
+.hover\:text-\[var\(--featured-color\)\]:hover {
+    color: var(--featured-color);
+}
+.focus\:bg-\[var\(--featured-color-v-light-blue\)\]:focus {
+    background-color: var(--featured-color-v-light-blue);
+}
 .group:hover .group-hover\:block {
     display: block;
 }
-
 @media (min-width: 640px) {
     .sm\:col-span-2 {
         grid-column: span 2 / span 2;
     }
+    .sm\:p-6 {
+        padding: 1.5rem;
+    }
+    .sm\:px-16 {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
 }
-
 @media (min-width: 768px) {
     .md\:col-span-2 {
         grid-column: span 2 / span 2;
@@ -707,6 +823,9 @@ input:focus, textarea:focus {
     .md\:col-span-6 {
         grid-column: span 6 / span 6;
     }
+    .md\:grid-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
     .md\:grid-cols-6 {
         grid-template-columns: repeat(6, minmax(0, 1fr));
     }
@@ -714,10 +833,12 @@ input:focus, textarea:focus {
         gap: 2.5rem;
     }
 }
-
 @media (min-width: 1024px) {
     .lg\:col-span-1 {
         grid-column: span 1 / span 1;
+    }
+    .lg\:grid-cols-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
     .lg\:gap-8 {
         gap: 2rem;
