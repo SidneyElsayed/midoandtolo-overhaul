@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS */
+
+section {
+    padding: 5%;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.max-width {
+    max-width: 1000px;
+}
+
+/* Button Classes */
+
+.button {
+    border: 1px solid var(--featured-color);
+    color: var(--featured-color);
+}
+
+.button-featured {
+    background-color: var(--featured-color);
+    color: var(--bg-color);
+    display: block;
+}
+
+/* Form Styles */
+
+input, textarea {
+    width: 100%;
+    border: 1px solid var(--text-color);
+    padding: .5rem;
+    outline: none;
+}
+
+input:focus, textarea:focus {
+    background-color: var(--featured-color);
+}
+
+
+/* Back to Top Grid */
+.major-funders-grid {
+    grid-template-columns: 12rem 1fr 1fr;
+  }

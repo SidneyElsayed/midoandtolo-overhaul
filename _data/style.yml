@@ -1,0 +1,21 @@
+schemes-colors:
+  - scheme_name: base
+    bg-color: '#ffffff'
+    bg-secondary-color: '#f2ede1'
+    featured-color: '#f2ede1'
+    text-color: '#1d1d1b'
+  - scheme_name: dark
+    bg-color: '#1d1d1b'
+    bg-secondary-color: '#2d2d2b'
+    featured-color: '#227'
+    text-color: '#ffffff'
+  - scheme_name: featured
+    bg-color: '#f2ede1'
+    bg-secondary-color: '#ffffff'
+    featured-color: '#227'
+    text-color: '#000'
+  - scheme_name: footer
+    bg-color: '#1d1d1b'
+    bg-secondary-color: '#2d2d2b'
+    featured-color: '#227'
+    text-color: '#ffffff'

@@ -1,0 +1,50 @@
+<section id="section-{{forloop.index}}" class="relative">
+  <img src="{{block.image}}" alt="{{block.alt}}" class="absolute inset-0 w-full h-full object-cover">
+  {% unless block.overlay.opacity == 0 %}
+  <div class="overlay absolute inset-0 w-full h-full"></div>
+  {% endunless %}
+  <div class="max-width mx-auto relative">
+    <div class="flex content-mover">
+      <div class="content-block">{{block.text-html}}</div>
+    </div>
+  </div>
+</section>
+
+<!-- Mini Style Sheet -->
+<style>
+#section-{{forloop.index}} .content-mover {
+  min-height: {{block.height}};
+  justify-content: {{block.horizontal-placement}};
+  align-items: {{block.vertical-placement}};
+}
+
+#section-{{forloop.index}} .content-block {
+  width: {{block.width}};
+  text-align: {{block.text-alignment}}
+}
+
+{% unless block.overlay.opacity == 0 %}
+#section-{{forloop.index}} .overlay {
+  background-color: {{block.overlay.color}};
+  opacity: {{block.overlay.opacity}};
+}
+{% endunless %}
+</style>
+
+{% comment %}
+
+<!-- FRONT MATTER REFERENCE -->
+- id: banner 
+  text_html: Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis deserunt, doloribus incidunt beatae id distinctio consectetur aut fugiat magnam, nam maiores exercitationem reiciendis molestiae tempora quaerat cumque itaque possimus dolore?
+  height: 95vh
+  width: 33%
+  horizontal-placement: center
+  vertical-placement: center
+  text-alignment: center
+  image: https://picsum.photos/id/1025/600/400
+  alt:
+  overlay:
+    color: 
+    opacity: 
+
+{% endcomment %}

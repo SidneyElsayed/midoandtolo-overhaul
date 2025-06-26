@@ -1,0 +1,139 @@
+paths:
+  uploads: uploads
+  static: ''
+  dam_uploads: ''
+  dam_static: ''
+  collections: ''
+  data: _data
+  layouts: _layouts
+  includes: _includes
+collections_config:
+  pages:
+    path: ''
+    output: true
+    filter: strict
+    description: ''
+    icon: notes
+    _editables:
+    _inputs:
+    _select_data:
+    _structures:
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+    schemas:
+      default page:
+        path:
+        reorder_inputs: true
+        hide_extra_inputs: false
+        remove_empty_inputs: false
+        remove_extra_inputs: true
+        name:
+        icon: notes
+        preview:
+        _editables:
+        _inputs:
+        _select_data:
+        _structures:
+        create:
+        new_preview_url:
+
+
+_inputs:
+  layout:
+    type: text
+    hidden: true
+    cascade: true
+  id:
+    type: text
+    hidden: true
+    cascade: true
+  text-html:
+    type: html
+    options:
+      allow_resize: true
+      allow_custom_markup: false
+      remove_custom_markup: false
+      initial_height: 320
+      format: p h1 h2 h3 a img
+      italic: true
+      bold: true
+      horizontalrule: true
+      image: true
+      image_size_attributes: true
+      link: true
+      resize_style: contain
+      snippet: false
+      styles: /editor.css
+    label: Content
+    cascade: true
+  min-height:
+    type: select
+    options:
+      allow_empty: true
+      values:
+        50vh: half screen min-height
+        75vh: three quater screen min-height
+        90vh: just short of full screen
+        100vh: full screen
+    cascade: true
+  text-alignment:
+    type: select
+    options:
+      allow_empty: false
+      values:
+        - left
+        - center
+        - right
+    cascade: true
+
+_structures:
+  blocks:
+    style: modal
+    values:
+      - label: text block
+        value:
+          id: rich-text 
+          text-html: Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis deserunt, doloribus incidunt beatae id distinctio consectetur aut fugiat magnam, nam maiores exercitationem reiciendis molestiae tempora quaerat cumque itaque possimus dolore?
+          height: 95vh
+          width: 33%
+          horizontal-placement: center
+          vertical-placement: center
+          text-alignment: center
+          scheme-color: dark
+      - label: banner
+        value:
+          id: banner 
+          text-html: Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis deserunt, doloribus incidunt beatae id distinctio consectetur aut fugiat magnam, nam maiores exercitationem reiciendis molestiae tempora quaerat cumque itaque possimus dolore?
+          height: 95vh
+          width: 33%
+          horizontal-placement: center
+          vertical-placement: center
+          text-alignment: center
+          image: https://picsum.photos/id/1025/600/400
+          alt:
+          overlay:
+            color: 
+            opacity: 
+  
+  
+  
+  
+  header_links:
+    style: modal
+    values:
+      - label: simple link
+        value:
+          link: /
+          text: home
+      - label: link with sublinks
+        value:
+          text: home
+          link: /
+          sub_links:
+            - text: sublink 1
+              link: /
+            - text: sublink 2
+              link: /
+            - text: sublink 3
+              link: /

@@ -1,0 +1,123 @@
+---
+layout: default
+blocks:
+- id: rich-text 
+  text-html: Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis deserunt, doloribus incidunt beatae id distinctio consectetur aut fugiat magnam, nam maiores exercitationem reiciendis molestiae tempora quaerat cumque itaque possimus dolore?
+  height: 60vh
+  width: 70%
+  horizontal-placement: center
+  vertical-placement: center
+  text-alignment: center
+  scheme-color: dark
+- id: banner 
+  text-html: Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis deserunt, doloribus incidunt beatae id distinctio consectetur aut fugiat magnam, nam maiores exercitationem reiciendis molestiae tempora quaerat cumque itaque possimus dolore?
+  height: 95vh
+  width: 33%
+  horizontal-placement: center
+  vertical-placement: center
+  text-alignment: center
+  image: https://picsum.photos/id/1025/600/400
+  alt:
+  overlay:
+    color: 
+    opacity: 
+- id: ticker-banner
+  banner-style:
+    direction: English
+    speed: 50
+    text-size:
+  banner-message:
+  - text: Lorem ipsum dolor sit!
+    url:
+  - text: Doloribus incidunt beatae!
+    url:
+  - text: Dexercitationem reiciendis!
+    url:
+- id: accordion
+  section-heading: This is a heading
+  heading-text-alignment: left
+  faq-text-alignment: left
+  faq-loop:
+    - question: Do you have a question?
+      answer-html: Harum tempora rerum debitis! Quo fugiat eius accusamus suscipit dignissimos aspernatur aliquid nisi repellat expedita veritatis saepe, delectus, dolorem consequatur autem fugit.
+    - question: Is there another question you need to answer?
+      answer-html: Harum tempora rerum debitis! Quo fugiat eius accusamus suscipit dignissimos aspernatur aliquid nisi repellat expedita veritatis saepe, delectus, dolorem consequatur autem fugit. Quo fugiat eius accusamus suscipit dignissimos aspernatur aliquid nisi repellat expedita veritatis saepe, delectus, dolorem consequatur autem fugit.
+    - question: Did we answer your question?
+      answer-html: Harum tempora rerum debitis! Quo fugiat eius accusamus suscipit dignissimos aspernatur aliquid nisi repellat expedita veritatis saepe, delectus, dolorem consequatur autem fugit.
+- id: filterable-grid
+  filter-buttons:
+    - button-text: Landscape
+    - button-text: Portrait
+    - button-text: Animal
+  grid:
+    - image: https://picsum.photos/id/1025/600/400
+      alt:
+      filter: Landscape Animal
+      caption:
+    - image: https://picsum.photos/id/1024/600/400
+      alt:
+      filter: Portrait
+      caption:
+    - image: https://picsum.photos/id/1026/600/400
+      alt:
+      filter: Landscape 
+      caption:
+- id: filterable-menu
+  filter-buttons:
+        - button-text: Pescatarian
+        - button-text: Vegetarian
+        - button-text: Vegan
+  grid:
+    - filter: Vegetarian Vegan Nuts
+      dish-name: Dish 1
+      price: $45
+      description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio perspiciatis perferendis architecto eveniet.
+    - filter: Pescatarian
+      dish-name: Dish 2
+      price: $32
+      description: Animi praesentium a recusandae sit. Velit natus suscipit corrupti rem ea. Excepturi quaerat porro at libero maiores.
+    - filter: Vegetarian 
+      dish-name: Dish 3
+      price: $17
+      description: Optio perspiciatis perferendis architecto eveniet. Praesentium a recusandae sit. Velit natus suscipit.
+    - filter: Vegetarian 
+      dish-name: Dish 4
+      price: $36
+      description: Praesentium a recusandae sit. Velit natus suscipit corrupti rem ea. Excepturi quaerat porro at libero maiores.
+- id: multi-select-filter
+  filter-buttons:
+        - button-text: Pescatarian
+        - button-text: Vegetarian
+        - button-text: Vegan
+        - button-text: GF
+  grid:
+    - filter: 
+        - Vegetarian 
+        - Vegan 
+        - Nuts
+      dish-name: Dish 1
+      price: $45
+      description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio perspiciatis perferendis architecto eveniet.
+    - filter: 
+        - Pescatarian
+      dish-name: Dish 2
+      price: $32
+      description: Animi praesentium a recusandae sit. Velit natus suscipit corrupti rem ea. Excepturi quaerat porro at libero maiores.
+    - filter: 
+        - Vegetarian 
+        - GF
+      dish-name: Dish 3
+      price: $17
+      description: Optio perspiciatis perferendis architecto eveniet. Praesentium a recusandae sit. Velit natus suscipit.
+    - filter: 
+        - Vegetarian 
+      dish-name: Dish 4
+      price: $36
+      description: Praesentium a recusandae sit. Velit natus suscipit corrupti rem ea. Excepturi quaerat porro at libero maiores.
+seo:
+  title:  
+  description:
+  image:
+  favicon:
+  index: true
+---

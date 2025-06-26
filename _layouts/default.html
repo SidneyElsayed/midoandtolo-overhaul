@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head -->
+{% include /technical-code/site-head.html %}
+
+<body>
+    <!-- Color Scheme Styles -->
+    <style>
+
+        :root,{% for scheme in site.data.style.schemes-colors %}
+            .scheme-{{scheme.scheme_name}} {
+                --bg-color: {{scheme.bg-color}};
+                --bg-secondary-color: {{scheme.bg-secondary-color}};
+                --featured-color: {{scheme.featured-color}};
+                --text-color: {{scheme.text-color}};
+            }
+        {% endfor %}
+    
+    </style>
+
+    {% include /header/header-2.html %}
+
+    {% for block in page.blocks %}
+    <!-- {{block.id}} -->
+    <div class="scheme-{{block.scheme-color}}">
+        {% include /blocks/{{block.id}}.html %}
+    </div>
+    {% endfor %}
+
+    {{content}}
+
+
+    {% include /footer/footer-2.html %}
+
+
+<!-- BODY SCRIPTS - Jquery, Slick Slider, Font Awesome, Lightgallery, Animate on Scroll -->
+{% include /technical-code/body-scripts.html %}
+
+
+<!-- js checks -->
+{% for block in page.blocks %}
+
+<!-- FILTERABLE GRID/MENU CHECK (based on id) -->
+{% if block.id == "filterable-grid" %}
+{% assign has-filterable-gallery = true %}
+{% endif %}
+
+{% if block.id == "filterable-menu" %}
+{% assign has-filterable-gallery = true %}
+{% endif %}
+
+<!-- MULTI-FILTERABLE MENU CHECK (based on id) -->
+{% if block.id == "multi-select-filter" %}
+{% assign has-multi-filterable-gallery = true %}
+{% endif %}
+
+{% endfor %}
+<!-- end of js check -->
+
+
+
+<script>
+// SINGLE FILTERABLE JAVASCRIPT - FILTERABLE GALLERY SCRIPT TO GO WITH 'FILTERABLE GRID' OF 'FILTERABLE MENU' BLOCKS (JavaScript)
+{% if has-filterable-gallery %}
+    {% include /technical-code/filterable-gallery-script.js %}
+{% endif %}
+
+// MULTI-FILTERABLE GALLERY SCRIPT TO GO WITH 'MULTI-SELECT FILTER' BLOCK (JavaScript)
+{% if has-multi-filterable-gallery %}
+    {% include /technical-code/multi-filterable-gallery-script.js %}
+{% endif %}
+    
+// GALLERY STYLE SLICK SLIDER JAVASCRIPT INCLUDE
+{% for block in page.blocks %}
+    {% if block.id == "gallery-slider" %}
+        {% include /technical-code/gallery-slick-slider.js %}
+    {% endif %}
+{% endfor %}
+
+</script>
+
+
+{% include /technical-code/cookie-banner-script.html %}
+
+
+</body>
+
+</html>

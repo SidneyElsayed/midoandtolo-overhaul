@@ -1,0 +1,111 @@
+<section id="back-to-top" class="px-8 sm:px-16 py-16 grid major-funders-grid bg-white">
+  <div class="col-span-1">
+    <h3 class="pb-2 featured-text uppercase font-bold text-xl">Categories</h3>
+    <!-- Corporate -->
+    <div class="block mb-2">
+      <a href="#corporate" class="hover:text-[var(--featured-color)] border-b hover:border-b-[var(--featured-color)]"> Major Funders </a>
+    </div>
+
+    <!-- Nonprofit -->
+    <div class="block mb-2">
+    <a href="#nonprofit" class="hover:text-[var(--featured-color)] border-b hover:border-b-[var(--featured-color)]"> Nonprofit Partners </a>
+    </div>
+
+    <!-- back to top -->
+    <div class="sticky top-full">
+      <a href="#back-to-top" class="font-bold">Back to top <span class="text-xl">&#x2934;</span></a>
+    </div>
+  </div>
+
+  <div class="col-span-2">
+    {% for commitment in page.partner-loop %}
+    <h2 id="{{commitment.tag}}" class="pb-6 featured-text text-5xl font-extrabold uppercase tracking-wide">{{commitment.title}}</h2>
+
+    <div class="pb-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"> 
+    {% for item in commitment.partners %}
+      <div class="p-8 sm:p-6 col-span-1 w-full h-full">
+        <a href="{{item.link}}" target="_blank">
+          <img class="object-cover object-center" style="object-position: {{item.image-horizontal-focal-point}} {{item.image-vertical-focal-point}}" src="{{item.image}}" alt="{{item.alt}}" />
+      </a>
+      </div>
+    {% endfor %}
+    </div>
+    {% endfor %}
+
+  </div>
+</section>
+
+{% comment %}
+
+<!-- FRONT MATTER REFERENCE (it was hard-coded before, also still has bugs!) -->
+- id: gallery-back-to-top
+  partner-loop:
+    - title: Major Funders
+      tag: corporate
+      partners:
+        - image: /uploads/SponsorLogos/am_f_b_regular-navy-[1].jpg
+          alt: Ameriprise Financial Logo
+          link: https://www.ameriprise.com/
+          image-horizontal-focal-point: center
+          image-vertical-focal-point: center
+        - image: /images/logo-ames.jpg
+          alt: Ames Construction Logo
+          link: https://www.amesconstruction.com/
+          image-horizontal-focal-point: center
+          image-vertical-focal-point: center
+        - image: /images/logo-bcbsmn.jpg
+          alt: Blue Cross and Blue Shield of Minnesota Logo
+          link: https://www.bluecrossmn.com/
+          image-horizontal-focal-point: center
+          image-vertical-focal-point: center
+        - image: /uploads/SponsorLogos/fullColorJPG.jpg
+          alt: Genentech Logo
+          link: https://www.gene.com/
+          image-horizontal-focal-point: center
+          image-vertical-focal-point: center
+        - image: /uploads/SponsorLogos/THE-JOYFUL-NOISE-FOUNDATION.png
+          alt: The Joyful Noise Foundation Logo
+          link:
+          image-horizontal-focal-point: center
+          image-vertical-focal-point: center
+        - image: /uploads/SponsorLogos/mn-oncology-website.png
+          alt: Minnesota Oncology Logo
+          link: https://mnoncology.com/
+          image-horizontal-focal-point: center
+          image-vertical-focal-point: center
+        - image: /uploads/SponsorLogos/richard-schulze-website.png
+          alt: Richard M. Schulze Family Foundation Logo
+          link: https://www.schulzefamilyfoundation.org/
+          image-horizontal-focal-point: center
+          image-vertical-focal-point: center
+    - title: Nonprofit Partners
+      tag: nonprofit
+      partners:
+        - image: /uploads/SponsorLogos/acs-hope-lodge.png
+          alt: American Cancer Society Hope Lodge Logo
+          link: >-
+            https://www.cancer.org/support-programs-and-services/patient-lodging/hope-lodge/minneapolis.html
+          image-horizontal-focal-point: center
+          image-vertical-focal-point: center
+        - image: /uploads/SponsorLogos/aicaf-logo.png
+          alt: American Indian Cancer Foundation Logo
+          link: https://americanindiancancer.org/
+          image-horizontal-focal-point: center
+          image-vertical-focal-point: center
+        - image: /uploads/SponsorLogos/foundation-for-financial-planning-website.png
+          alt: The Foundation for Financial Planning Logo
+          link: https://ffpprobono.org/
+          image-horizontal-focal-point: center
+          image-vertical-focal-point: center
+        - image: /uploads/SponsorLogos/open-arms-long-1.png
+          alt: Open Arms of Minnesota Logo
+          link: https://www.openarmsmn.org/
+          image-horizontal-focal-point: center
+          image-vertical-focal-point: center
+        - image: /uploads/SponsorLogos/triage-cancer-squarelogo-1666153559864-(1).png
+          alt: Triage Cancer Logo
+          link: https://triagecancer.org/
+          image-horizontal-focal-point: center
+          image-vertical-focal-point: center
+
+{% endcomment %}

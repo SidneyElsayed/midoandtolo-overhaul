@@ -1,0 +1,39 @@
+<footer>
+  
+  <div class="max-width mx-auto">
+
+    <div class="grid grid-cols-6 p-4 px-8">
+      <!-- Logo -->
+      <div class="col-span-6 md:col-span-2">
+        <a href="/index.html">
+          <div>LOGO</div>
+          <img class="" src="">
+        </a>
+      </div>
+      <!-- Navigation Links -->
+      <nav class="p-4 grid grid-cols-4 col-span-4 justify-between gap-x-32 gap-y-10 md:gap-10 lg:gap-8">
+        <!-- Link Group Loop -->
+        {% for menu in site.data.navigation.footer-links %}
+        <div class="col-span-4 sm:col-span-2 lg:col-span-1">
+          <p class="font-semibold leading-8">{{menu.heading}}</p>
+          {% for link in menu.links %}
+          <a href="{{link.url}}" class="font-thin block leading-7">{{link.text}}</a>
+          {% endfor %}
+        </div>
+        {% endfor %}
+  
+        <!-- Address -->
+        <div class="col-span-4 sm:col-span-2 lg:col-span-1">
+          <p class="font-semibold leading-8">{{site.data.navigation.footer-contact.heading}}</p>
+          <a href="{{link.url}}" target="_blank" class="font-thin block leading-7">{{site.data.navigation.footer-contact.map-text-1}}<br> {{site.data.navigation.footer-contact.map-text-2}} </a>
+          <a href= “tel:{{site.data.navigation.footer-contact.phone-number}}” class="font-thin block leading-7">{{site.data.navigation.footer-contact.phone-text}} </a>
+        </div>
+      </nav>
+
+      <!-- Copyright -->
+      <div class="p-4 col-span-6 text-center italic">
+        <p class="font-thin">Copyright© 2025 Company name™. All rights reserved.</p>
+      </div>
+    </div>
+  
+</footer>

@@ -1,0 +1,241 @@
+---
+layout: default
+title: Cookie banner
+img_Path: https://picsum.photos/id/1025/600/400
+teaching_notes: false
+---
+
+<!-- Like all the other snippets, this one is also a self contained snippet. It is a cookie banner that is fully functional (with revocable cookies at any time) and can be added to any website. -->
+
+<!-- The banner is a fixed banner that is at the bottom of the page. It has 3 buttons, one for accepting all cookies, one for accepting only the analytics cookies and one for accepting only the darkmode cookies. you can add more buttons but these were the ones I cam up with -->
+<div id="cookie-notice" class="init">
+  <button class="unaccepted accept-all">all cookies</button>
+  <button class="unaccepted cookieButton" data-cookie-type="anacliticCookies">Anaclitic cookies</button>
+  <button class="unaccepted cookieButton" data-cookie-type="darkmode">darkmode cookies</button>
+  <button class="hide-button" data-cookie-type="hideBanner">
+    <svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M7.5 11C7.22386 11 7 10.7761 7 10.5C7 10.2239 7.22386 10 7.5 10C7.77614 10 8 10.2239 8 10.5C8 10.7761 7.77614 11 7.5 11Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M13 18C12.4477 18 12 17.5523 12 17C12 16.4477 12.4477 16 13 16C13.5523 16 14 16.4477 14 17C14 17.5523 13.5523 18 13 18Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11 7.01L11.01 6.99889" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8 16.01L8.01 15.9989" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M16 9.01L16.01 8.99889" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M17 14.01L17.01 13.9989" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M13 12.01L13.01 11.9989" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+</div>
+
+
+<style>
+
+  body.darkmode{
+    background-color: #272;
+    color:antiquewhite;
+  }
+
+  #cookie-notice {
+    padding: 0.5rem 1rem;
+    text-align: center;
+    position: fixed;
+    left: calc(-100% + 2rem);
+    right: calc(100% - 2rem);
+    bottom: 0;
+    background: #222;
+    color: rgba(255,255,255,0.8);
+    transition: all 2s;
+  }
+  #cookie-notice.active {
+    left: 1rem;
+    right: 1rem;
+    width: calc(100% - 2rem);
+  }
+
+  #cookie-notice.init{
+    right:100vw;
+    left: -100vw;
+  } 
+  #cookie-notice a {
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 0.5rem;
+  }
+  #cookie-notice .button-subtle {
+  opacity: 0.8;
+  }
+
+  #close-cookie-banner {
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+  opacity: 0.5
+  }
+
+  button.unaccepted::before{
+    content: 'accept ';
+  }
+  button.accepted::before{
+    content: 'revoke ';
+  }
+  body button.hide-button::before {
+    content: ''
+  }
+  body button.hide-button{
+    position: absolute;
+    right: 1rem;
+  }
+</style>
+
+
+<script>
+  function createCookie(name,value,days) {
+      var expires = "";
+      if (days) {
+          var date = new Date();
+          date.setTime(date.getTime() + (days*24*60*60*1000));
+          expires = "; expires=" + date.toUTCString();
+      }
+      document.cookie = name + "=" + value + expires + "; path=/";
+  }
+  function readCookie(name) {
+      var nameEQ = name + "=";
+      var ca = document.cookie.split(';');
+      for(var i=0;i < ca.length;i++) {
+          var c = ca[i];
+          while (c.charAt(0)==' ') c = c.substring(1,c.length);
+          if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+      }
+      return null;
+  }
+  function eraseCookie(name) {
+      createCookie(name,"",-1);
+  }
+
+
+
+
+  const cookieBanner = document.querySelector('#cookie-notice')
+  const cookieButtons = cookieBanner.querySelectorAll('.cookieButton')
+  const acceptAllButton = cookieBanner.querySelector('.accept-all')
+  const hideButton = cookieBanner.querySelector('.hide-button')
+  let allCookiesAccepted = true
+  let unaccepted = false 
+
+
+  // button initilisaztion
+  cookieButtons.forEach(button => {
+    let buttonCookie = button.dataset.cookieType
+
+    if ( readCookie(buttonCookie) == 'accepted' ){
+      button.classList.remove('unaccepted')
+      button.classList.add('accepted')
+    }
+
+    button.addEventListener('click', () => {
+      
+      if (button.classList.contains('unaccepted')){
+        button.classList.remove('unaccepted')
+        button.classList.add('accepted')
+        createCookie(buttonCookie,'accepted',31)
+      } else {
+        button.classList.add('unaccepted')
+        button.classList.remove('accepted')
+        createCookie(buttonCookie,'unaccepted',31) 
+      }
+      runCookies()
+      console.log(buttonCookie, readCookie(buttonCookie))
+    })
+
+  })
+
+  // checks for unaccepted cookie buttons 
+function checkForUnacceptedCookies() {
+  console.log('cookie checker')
+
+  if (Array.from(cookieButtons).some((node) => node.classList.contains('unaccepted'))) {
+    return true
+  }
+  return false
+}
+  
+
+  // runs the codes based on different button
+  function runCookies() {
+      allCookiesAccepted = true
+      if (readCookie('anacliticCookies')=='accepted') {
+        // analitic cookie codes
+      } 
+      if (readCookie('darkmode')=='accepted') {
+        // darkmode cookie codes
+        document.querySelector('body').classList.add('darkmode')
+      } else {
+        document.querySelector('body').classList.remove('darkmode')
+      }
+      if (readCookie('hideBanner') != 'accepted') {
+        cookieBanner.classList.add('active')
+      } else {
+        cookieBanner.classList.remove('active')
+      }
+
+      console.log(checkForUnacceptedCookies(),'output')
+
+      if (checkForUnacceptedCookies() === true) {
+        acceptAllButton.classList.remove('accepted')
+        acceptAllButton.classList.add('unaccepted')
+      } else {
+        acceptAllButton.classList.remove('unaccepted')
+        acceptAllButton.classList.add('accepted')
+      }
+  }
+
+
+  // runs the cookies 
+  runCookies()
+
+
+
+// just a checker for dev
+  console.log("cookies", document.cookie, allCookiesAccepted)
+
+const allCookieButton = cookieBanner.querySelector('.accept-all')
+
+allCookieButton.addEventListener('click', () => {
+    if (allCookieButton.classList.contains('unaccepted')) {
+        cookieButtons.forEach(button => {
+
+            if (button.classList.contains('unaccepted')) {
+                button.click()
+            }
+
+        })
+    } else {
+        cookieButtons.forEach(button => {
+
+            button.click()
+
+        })
+    }
+})
+
+
+  // hide popup logic
+
+  if (readCookie('hideBanner') == "unaccepted") {
+    hideButton.classList.add('unaccepted')
+  } else {
+    hideButton.classList.add('accepted')
+  }
+
+hideButton.addEventListener('click', () => {
+      
+    let buttonCookie = hideButton.dataset.cookieType
+      if (hideButton.classList.contains('unaccepted')){
+        hideButton.classList.remove('unaccepted')
+        hideButton.classList.add('accepted')
+        createCookie(buttonCookie,'accepted',31)
+      } else {
+        hideButton.classList.add('unaccepted')
+        hideButton.classList.remove('accepted')
+        createCookie(buttonCookie,'unaccepted',31) 
+      }
+      runCookies()
+    })
+
+
+    // popup delay
+
+    setTimeout(() => {
+  cookieBanner.classList.remove('init')
+}, "1000")
+
+</script>

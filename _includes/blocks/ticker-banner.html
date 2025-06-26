@@ -1,0 +1,129 @@
+<section id="section-{{forloop.index}}" class="px-0">
+  <div class="tickerBanner" data-banner-speed="{{block.banner-style.speed}}">
+    {% for message in block.banner-message %}
+    <!-- URL OPTION - if you don't want these clickable, remove URL in front matter -->
+      <a href="{{message.url}}" class="text-block">{{message.text}}</a>
+      {% endfor %}
+  </div>
+</section>
+
+<!-- Mini Style Sheet -->
+<style>
+.tickerBanner{
+  --bannerBlockLength: 280px;
+  --bannerBlockTime: 2s;
+overflow-X: hidden;
+display: flex;
+{% if block.banner-style.direction == "English" %}
+/* LTR being shorthand for left-to-right */
+flex-direction: row;
+{% else %}
+flex-direction: row-reverse;
+{% endif %}
+/* prevents gap - if text left to right then out 'row-reverse' instead of row */
+text-align: center;
+}
+
+
+.tickerBanner > * {
+  display: inline-block;
+  padding: 1vw;
+  flex-shrink: 0;
+  position: relative;
+}
+
+/* Pause on hover */
+.tickerBanner.active:hover > *{
+  animation-play-state: paused;
+}
+.tickerBanner.active > * {
+  animation: ticker 2s infinite linear;
+  animation-duration: var(--bannerBlockTime), 2s;
+} 
+
+/* change this for text flow direction */
+{% if block.banner-style.direction == "English" %}
+@keyframes ticker {
+    from {right:0}
+    to   {right:var(--bannerBlockLength)}
+}
+{% else %}
+@keyframes ticker {
+    from {left:0}
+    to   {left:var(--bannerBlockLength)}
+}
+{% endif %}
+</style>
+
+<!-- Javascript -->
+<script>
+  const tickerBanners = document.querySelectorAll('.tickerBanner');
+
+tickerBanners.forEach(banner => {
+
+
+
+  let textBlock = banner.querySelectorAll('.text-block');
+
+  console.log(textBlock[0].offsetWidth)
+
+  let bannerBlock = 0;
+  textBlock.forEach( block => {
+    bannerBlock += block.offsetWidth
+  });
+
+  let bannerLength = bannerBlock
+  console.log(bannerBlock)
+  console.log(banner.dataset.bannerSpeed)
+  
+  
+  banner.style.setProperty('--bannerBlockLength', `${bannerBlock}px`);
+  banner.style.setProperty('--bannerBlockTime', `${(bannerBlock / banner.dataset.bannerSpeed )}s`);
+
+  
+  function extendBanner() {
+  if (bannerLength < (screen.width + bannerBlock) ) {
+    textBlock.forEach(block => {
+    console.log(block.innerHTML)
+    // add the newly created element and its content into the DOM
+    banner.appendChild(block.cloneNode(true));
+    // banner.querySelector('a:last-child').innerHTML = block.innerHTML
+    // banner.querySelector('a:last-child').href = block.href
+      
+    });
+    bannerLength += bannerBlock;
+    console.log(bannerLength) 
+    extendBanner()
+  } else {
+    banner.classList.add('active')
+  }
+}
+
+
+
+  extendBanner()
+
+  console.log(bannerLength)
+
+})
+
+</script>
+
+
+{% comment %}
+
+<!-- FRONT MATTER REFERENCE -->
+- id: ticker-banner
+  banner-style:
+    direction: English
+    speed: 50
+    text-size:
+  banner-message:
+  - text: Lorem ipsum dolor sit!
+    url:
+  - text: Doloribus incidunt beatae!
+    url:
+  - text: Dexercitationem reiciendis!
+    url:
+
+{% endcomment %}

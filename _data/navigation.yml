@@ -1,0 +1,55 @@
+header-links:
+  - text: Home
+    url: /
+  - text: About
+    url: /about
+  - text: Blog
+    url: /blog
+    sublinks:
+    - text: Travel & Lifestyle
+      url: /
+    - text: Food
+      url: /
+    - text: Blog
+      url: /blog
+    - text: Guides 
+      url: /
+  - text: Contact
+    url: /contact
+
+footer-links:
+  - heading: What we do
+    links:
+    - text: Travel
+      url: /
+    - text: Lifestyle & Fashion
+      url: /
+    - text: Foodie
+      url: /
+  - heading: About Us
+    links:
+    - text: Mission & Vision
+      url: /
+    - text: History
+      url: /
+    - text: Our People
+      url: /
+    - text: Financial Transparency
+      url: /
+    - text: Privacy Policy
+      url: /
+  - heading: Get Involved
+    links:
+    - text: Volunteer Opportunities
+      url: /
+    - text: Become a Partner
+      url: /
+    - text: Work With Us
+      url: /
+footer-contact:
+  heading: Company Name
+  map-link: maps.google.com
+  map-text-1: 1111 Centre Pointe Drive
+  map-text-2: City, Country
+  phone-number: +1-(612)-555-5555
+  phone-text: (612) 555-5555

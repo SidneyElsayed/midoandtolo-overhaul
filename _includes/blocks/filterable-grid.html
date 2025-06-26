@@ -1,0 +1,55 @@
+<section id="section-{{forloop.index}}" class="filterable-gallery">
+  <div class="max-width mx-auto">
+    <!-- For the filtering -->
+    <div>
+      <span class="filter-buttons active">All</span>
+
+    {% for button in block.filter-buttons %}
+      <span class="filter-buttons">{{button.button-text}}</span>
+    {% endfor %}
+    </div>
+
+    <!-- Things we're filtering -->
+    <div class="grid grid-cols-3 gap-4">
+    {% for grid-item in block.grid %}
+    <div class="grid-items All {{grid-item.filter}}">
+      <img src="{{grid-item.image}}" alt="{{grid-item.alt}}">
+      <div>{{grid-item.caption}}</div>
+    </div>
+    {% endfor %}
+    </div>
+
+
+  </div>
+</section>
+
+<!-- Mini Style Sheet -->
+<style>
+  .filter-buttons.active {
+    color: red;
+  }
+</style>
+
+{% comment %}
+
+<!-- FRONT MATTER REFERENCE -->
+- id: filterable-grid
+  filter-buttons:
+    - button-text: Landscape
+    - button-text: Portrait
+    - button-text: Animal
+  grid:
+    - image: https://picsum.photos/id/1025/600/400
+      alt:
+      filter: Landscape Animal
+      caption:
+    - image: https://picsum.photos/id/1024/600/400
+      alt:
+      filter: Portrait
+      caption:
+    - image: https://picsum.photos/id/1026/600/400
+      alt:
+      filter: Landscape 
+      caption:
+
+{% endcomment %}

@@ -1,0 +1,35 @@
+<section id="section-{{forloop.index}}">
+  <div class="max-width mx-auto">
+    <div class="flex content-mover">
+      <div class="content-block">{{block.text-html}}</div>
+    </div>
+  </div>
+</section>
+
+<!-- Mini Style Sheet -->
+<style>
+#section-{{forloop.index}} .content-mover {
+  min-height: {{block.height}};
+  justify-content: {{block.horizontal-placement}};
+  align-items: {{block.vertical-placement}};
+}
+
+#section-{{forloop.index}} .content-block {
+  width: {{block.width}};
+  text-align: {{block.text-alignment}};
+}
+</style>
+
+
+{% comment %}
+
+<!-- FRONT MATTER REFERENCE -->
+- id: rich-text
+  text-html: Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis deserunt, doloribus incidunt beatae id distinctio consectetur aut fugiat magnam, nam maiores exercitationem reiciendis molestiae tempora quaerat cumque itaque possimus dolore?
+  height: 95vh
+  width: 33%
+  horizontal-placement: center
+  vertical-placement: center
+  text-alignment: center
+
+{% endcomment %}
