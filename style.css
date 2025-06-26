@@ -8,6 +8,19 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Typography */
+body {
+    font-family: "Bitter", serif;
+}
+
+.accent-font {
+    font-family: "Mulish", sans-serif;
+}
+
+.heading-font {
+    font-family: "Rock Salt", cursive;
+}
+
 /* Custom CSS */
 
 section {

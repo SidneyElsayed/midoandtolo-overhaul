@@ -1,9 +1,9 @@
 header-links:
-  - text: Home
+  - text: Travel Tips
     url: /
-  - text: About
+  - text: On the Road
     url: /about
-  - text: Blog
+  - text: Food & Culture
     url: /blog
     sublinks:
     - text: Travel & Lifestyle
@@ -14,6 +14,10 @@ header-links:
       url: /blog
     - text: Guides 
       url: /
+  - text: Browse
+    url: /
+  - text: Stories
+    url: /
   - text: Contact
     url: /contact
 
