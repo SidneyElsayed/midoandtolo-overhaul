@@ -59,6 +59,31 @@ input:focus, textarea:focus {
     background-color: var(--featured-color);
 }
 
+/* Curve points for images */
+.curve-point-right {
+    border-radius: 100px 4px 100px 4px;
+  }
+  
+  .curve-point-left {
+    border-radius: 4px 100px 4px 100px;
+  }
+  
+  .curve-point-right-sm {
+    border-radius: 15px 4px 15px 4px;
+  }
+  
+  .curve-point-left-sm {
+    border-radius: 4px 15px 4px 15px;
+  }
+  
+  .curve-point-right-sm-top {
+    border-radius: 15px 4px 0px 0px;
+  }
+  
+  .curve-point-left-sm-top {
+    border-radius: 4px 15px 0px 0px;
+  }
+
 
 /* Back to Top Grid */
 .major-funders-grid {

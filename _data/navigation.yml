@@ -1,18 +1,24 @@
 header-links:
   - text: Travel Tips
     url: /
-  - text: On the Road
-    url: /about
-  - text: Food & Culture
-    url: /blog
     sublinks:
-    - text: Travel & Lifestyle
+    - text: Tips for Saudi
       url: /
-    - text: Food
+    - text: Weekend Getaways
       url: /
-    - text: Blog
-      url: /blog
-    - text: Guides 
+  - text: On the Road
+    url: /
+    sublinks:
+    - text: Wild Camping
+      url: /
+    - text: Logistics
+      url: /
+  - text: Food & Culture
+    url: /
+    sublinks:
+    - text: Cultural Insights
+      url: /
+    - text: Food & Drinks
       url: /
   - text: Browse
     url: /
@@ -22,33 +28,39 @@ header-links:
     url: /contact
 
 footer-links:
-  - heading: What we do
+  - heading: Lastest Posts
     links:
-    - text: Travel
+    - text: Getting to AlUla
       url: /
-    - text: Lifestyle & Fashion
+    - text: Expat Experiences in Saudi
       url: /
-    - text: Foodie
+    - text: Road Trips & Wild Camping
       url: /
-  - heading: About Us
+    - text: Egypt's Blue Hole
+      url: /
+  - heading: Stories
     links:
-    - text: Mission & Vision
+    - text: Origin Story
       url: /
-    - text: History
+    - text: Meet the Gang
       url: /
-    - text: Our People
+    - text: Cairo to Cambodia
       url: /
-    - text: Financial Transparency
-      url: /
-    - text: Privacy Policy
-      url: /
-  - heading: Get Involved
+  - heading: Top Destiantions
     links:
-    - text: Volunteer Opportunities
+    - text: Saudi
       url: /
-    - text: Become a Partner
+    - text: Egypt
       url: /
-    - text: Work With Us
+    - text: UAE
+      url: /
+  - heading: Travel Tips
+    links:
+    - text: Weekend Getaways
+      url: /
+    - text: Tips for Saudi
+      url: /
+    - text: Logistics
       url: /
 footer-contact:
   heading: Company Name

@@ -526,6 +526,9 @@ video {
 .max-w-\[75\%\] {
     max-width: 75%;
 }
+.max-w-\[80\%\] {
+    max-width: 80%;
+}
 .flex-shrink {
     flex-shrink: 1;
 }
@@ -619,9 +622,6 @@ video {
 .p-5 {
     padding: 1.25rem;
 }
-.p-6 {
-    padding: 1.5rem;
-}
 .p-8 {
     padding: 2rem;
 }
@@ -653,11 +653,18 @@ video {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
+.py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
 .pb-2 {
     padding-bottom: 0.5rem;
 }
 .pb-20 {
     padding-bottom: 5rem;
+}
+.pb-3 {
+    padding-bottom: 0.75rem;
 }
 .pb-5 {
     padding-bottom: 1.25rem;
@@ -670,9 +677,6 @@ video {
 }
 .pt-8 {
     padding-top: 2rem;
-}
-.pb-3 {
-    padding-bottom: 0.75rem;
 }
 .text-left {
     text-align: left;
@@ -814,6 +818,31 @@ input, textarea {
 input:focus, textarea:focus {
     background-color: var(--featured-color);
 }
+
+/* Curve points for images */
+.curve-point-right {
+    border-radius: 100px 4px 100px 4px;
+  }
+  
+  .curve-point-left {
+    border-radius: 4px 100px 4px 100px;
+  }
+  
+  .curve-point-right-sm {
+    border-radius: 15px 4px 15px 4px;
+  }
+  
+  .curve-point-left-sm {
+    border-radius: 4px 15px 4px 15px;
+  }
+  
+  .curve-point-right-sm-top {
+    border-radius: 15px 4px 0px 0px;
+  }
+  
+  .curve-point-left-sm-top {
+    border-radius: 4px 15px 0px 0px;
+  }
 
 
 /* Back to Top Grid */
