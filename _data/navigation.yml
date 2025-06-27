@@ -20,12 +20,12 @@ header-links:
       url: /
     - text: Food & Drinks
       url: /
-  - text: Browse
-    url: /
   - text: Stories
     url: /
   - text: Contact
     url: /contact
+  - text: Browse
+    url: /
 
 footer-links:
   - heading: Lastest Posts
@@ -46,13 +46,13 @@ footer-links:
       url: /
     - text: Cairo to Cambodia
       url: /
-  - heading: Top Destiantions
+  - heading: Let's Connect
     links:
-    - text: Saudi
+    - text: Contact Us
       url: /
-    - text: Egypt
+    - text: Work With Us
       url: /
-    - text: UAE
+    - text: Follow Along
       url: /
   - heading: Travel Tips
     links:
