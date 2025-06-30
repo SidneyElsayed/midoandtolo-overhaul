@@ -11,6 +11,7 @@
 /* Typography */
 body {
     font-family: "Bitter", serif;
+    color: #262626;
 }
 
 .body-font {
@@ -22,11 +23,19 @@ body {
 }
 
 .featured-font {
-    font-family: "Permanent Marker", cursive;
+    font-family: "Permanent Marker", sans-serif;
 }
 
-footer, header .featured-font {
+footer .featured-font {
   font-size: 20px;
+}
+
+header .featured-font {
+  font-size: 20px;
+}
+
+footer .body-font {
+  font-size: 16px;
 }
 
 header .body-font {
@@ -49,6 +58,12 @@ h2 strong {
 h3 strong {
   font-weight: inherit;
   font-family: "Permanent Marker", cursive;
+}
+
+/* Basic p & a styles */
+
+a:hover {
+  color: var(--featured-color);
 }
 
 /* Custom CSS */

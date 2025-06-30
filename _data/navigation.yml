@@ -9,6 +9,8 @@ header-links:
   - text: Travel Tips
     url: /
     sublinks:
+    - text: Moving to Saudi
+      url: /posts/2024/expat-experiences-in-saudi-arabia
     - text: Tips for Saudi
       url: /
     - text: Weekend Getaways
@@ -22,10 +24,16 @@ header-links:
       url: /
   - text: Stories
     url: /
+    sublinks:
+    - text:
   - text: Contact
     url: /contact
+    sublinks:
+    - text:
   - text: Browse
     url: /
+    sublinks:
+    - text:
 
 footer-links:
   - heading: Lastest Posts

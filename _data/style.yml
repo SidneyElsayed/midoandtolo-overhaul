@@ -2,8 +2,8 @@ schemes-colors:
   - scheme_name: base
     bg-color: '#ffffff'
     bg-secondary-color: '#f2ede1'
-    featured-color: '#f2ede1'
-    text-color: '#1d1d1b'
+    featured-color: '#197A91'
+    text-color: '#262626'
   - scheme_name: dark
     bg-color: '#1d1d1b'
     bg-secondary-color: '#2d2d2b'
@@ -13,7 +13,7 @@ schemes-colors:
     bg-color: '#f2ede1'
     bg-secondary-color: '#ffffff'
     featured-color: '#227'
-    text-color: '#000'
+    text-color: '#262626'
   - scheme_name: footer
     bg-color: '#1d1d1b'
     bg-secondary-color: '#2d2d2b'

@@ -479,6 +479,9 @@ video {
 .col-span-1 {
     grid-column: span 1 / span 1;
 }
+.col-span-12 {
+    grid-column: span 12 / span 12;
+}
 .col-span-2 {
     grid-column: span 2 / span 2;
 }
@@ -547,6 +550,9 @@ video {
 }
 .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.grid-cols-12 {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 .grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -779,6 +785,7 @@ video {
 /* Typography */
 body {
     font-family: "Bitter", serif;
+    color: #262626;
 }
 
 .body-font {
@@ -790,11 +797,19 @@ body {
 }
 
 .featured-font {
-    font-family: "Permanent Marker", cursive;
+    font-family: "Permanent Marker", sans-serif;
 }
 
-footer, header .featured-font {
+footer .featured-font {
   font-size: 20px;
+}
+
+header .featured-font {
+  font-size: 20px;
+}
+
+footer .body-font {
+  font-size: 16px;
 }
 
 header .body-font {
@@ -817,6 +832,12 @@ h2 strong {
 h3 strong {
   font-weight: inherit;
   font-family: "Permanent Marker", cursive;
+}
+
+/* Basic p & a styles */
+
+a:hover {
+  color: var(--featured-color);
 }
 
 /* Custom CSS */
@@ -918,8 +939,14 @@ input:focus, textarea:focus {
     .md\:col-span-3 {
         grid-column: span 3 / span 3;
     }
+    .md\:col-span-4 {
+        grid-column: span 4 / span 4;
+    }
     .md\:col-span-6 {
         grid-column: span 6 / span 6;
+    }
+    .md\:col-span-8 {
+        grid-column: span 8 / span 8;
     }
     .md\:grid-cols-2 {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -937,6 +964,12 @@ input:focus, textarea:focus {
 @media (min-width: 1024px) {
     .lg\:col-span-1 {
         grid-column: span 1 / span 1;
+    }
+    .lg\:col-span-3 {
+        grid-column: span 3 / span 3;
+    }
+    .lg\:col-span-9 {
+        grid-column: span 9 / span 9;
     }
     .lg\:grid-cols-3 {
         grid-template-columns: repeat(3, minmax(0, 1fr));
