@@ -1,4 +1,11 @@
 header-links:
+  - text: Food & Culture
+    url: /
+    sublinks:
+    - text: Cultural Insights
+      url: /
+    - text: Food & Drinks
+      url: /
   - text: Travel Tips
     url: /
     sublinks:
@@ -12,13 +19,6 @@ header-links:
     - text: Wild Camping
       url: /
     - text: Logistics
-      url: /
-  - text: Food & Culture
-    url: /
-    sublinks:
-    - text: Cultural Insights
-      url: /
-    - text: Food & Drinks
       url: /
   - text: Stories
     url: /

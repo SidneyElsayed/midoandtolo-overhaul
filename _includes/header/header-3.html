@@ -16,9 +16,9 @@
         <a href="{{link.url}}" class="p-2 my-4">{{link.text}}</a>
 
         {% if link.sublinks %}
-        <div class="absolute pt-2 top-10 left-2 bg-[var(--bg-color)] hidden group-hover:block z-20">
+        <div class="absolute pt-2 top-8 left-2 bg-[var(--bg-color)] hidden group-hover:block z-20">
           {% for sublink in link.sublinks %}
-            <a href="{{sublink.url}}" class="px-3 py-1 whitespace-pre block detail-font font-thin">{{sublink.text}}</a>
+            <a href="{{sublink.url}}" class="px-3 py-1 whitespace-pre block body-font font-extralight">{{sublink.text}}</a>
           {% endfor %}
         </div>
           </span>
