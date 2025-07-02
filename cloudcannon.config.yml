@@ -11,8 +11,6 @@ collections_config:
   posts:
     output: true
     permalink: /posts/:year/:slug
-  baseurl: ""
-  url: "midoandtolo.com"
   pages:
     path: ''
     output: true
