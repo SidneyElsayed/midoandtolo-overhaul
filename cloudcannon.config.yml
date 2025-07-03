@@ -7,10 +7,6 @@ paths:
   data: _data
   layouts: _layouts
   includes: _includes
-collections_config:
-  posts:
-    output: true
-    permalink: /posts/:year/:slug
   pages:
     path: ''
     output: true

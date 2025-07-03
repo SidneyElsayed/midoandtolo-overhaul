@@ -1,0 +1,47 @@
+    <!------------------ SIDEBAR  --------------------------------->
+    <aside class="md:col-span-4 lg:col-span-3">
+
+      <div class="bg-gray-500 curve-point-right-sm">
+          <div>
+            <img src="/images/midoandtolo-111.jpg" class="curve-point-right-sm-top">
+          </div>
+          <div class="mb-2 p-4">
+              <p class="">We’re Ahmed and Sidney, just a couple of big kids sharing their adventures and showing that travel can be accessible.</p> 
+              <a href="/about-us.html" class="subtle-button">More about us</a>
+          </div>
+      </div>
+
+      <div class="bg-gray-500 curve-point-left-sm mb-2 p-4">
+          <h4 class="featured-font"> Recent Posts </h4>
+          <nav class="recent-posts-nav"> 
+              {% for post in site.posts limit:8 %}
+                   <a href="{{post.url}}"> {{post.title}}</a>
+              {% endfor %}
+          </nav>
+      </div>
+
+      <div class="bg-gray-500 curve-point-right-sm mb-2 p-4">
+          <h4 class="featured-font"> Explore Categories </h4>
+          <nav> 
+              {% for cat in site.archives limit:8 %}
+              {% unless cat.location == true %}
+              <a href="{{cat.url}}" class="tag"> {{cat.category}}</a>
+              {% endunless %}
+              {% endfor %}
+          </nav>
+      </div>
+
+      <div class="bg-gray-500 curve-point-left-sm mb-2 p-4">
+          <h4 class="featured-font"> Explore Destinations </h4>
+          <nav> 
+              {% for cat in site.archives %}
+              {% if cat.location == true %}
+              <a href="{{cat.url}}" class="tag"> {{cat.category}} </a>
+              {% endif %}
+              {% endfor %}
+          </nav>
+      </div>
+
+      <div id="ml-form-embed-newsletter" class="bg-gray-500 ml-embedded" data-form="JLTXRY"></div>
+
+  </aside> <!-- end sidebar-->
