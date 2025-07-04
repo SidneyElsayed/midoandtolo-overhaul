@@ -866,6 +866,11 @@ h3 strong {
   font-family: "Permanent Marker", sans-serif;
 }
 
+h4 strong {
+  font-weight: inherit;
+  font-family: "Permanent Marker", sans-serif;
+}
+
 /* Basic p & a styles */
 
 a:hover {
