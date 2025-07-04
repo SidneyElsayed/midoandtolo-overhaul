@@ -532,6 +532,9 @@ video {
 .hidden {
     display: none;
 }
+.aspect-\[5\/4\] {
+    aspect-ratio: 5/4;
+}
 .aspect-square {
     aspect-ratio: 1 / 1;
 }
@@ -581,14 +584,11 @@ video {
 .grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
 }
-.grid-cols-6 {
-    grid-template-columns: repeat(6, minmax(0, 1fr));
-}
 .grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
 }
-.content-center {
-    align-content: center;
+.grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 .justify-center {
     justify-content: center;
@@ -665,6 +665,9 @@ video {
 .p-12 {
     padding: 3rem;
 }
+.p-14 {
+    padding: 3.5rem;
+}
 .p-2 {
     padding: 0.5rem;
 }
@@ -735,6 +738,9 @@ video {
 .pr-12 {
     padding-right: 3rem;
 }
+.pr-3 {
+    padding-right: 0.75rem;
+}
 .pt-0 {
     padding-top: 0px;
 }
@@ -743,9 +749,6 @@ video {
 }
 .pt-8 {
     padding-top: 2rem;
-}
-.pr-3 {
-    padding-right: 0.75rem;
 }
 .text-left {
     text-align: left;
@@ -872,6 +875,15 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
 }
 
+h2:last-child, 
+h3:last-child, 
+h4:last-child, 
+h5:last-child, 
+h6:last-child, 
+p:last-child {
+	margin-bottom: 0;
+}
+
 h1 { font-size: 3rem; }
 h2 { font-size: 2rem; }
 h3 { font-size: 1.7rem; }
@@ -911,9 +923,33 @@ h4 strong {
 }
 
 /* Basic p & a styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
 a:hover {
-  color: var(--featured-color);
+  color: var(--featured-text); 
+}
+
+.hover-white a:hover {
+  color: white; 
+}
+
+.hover-dark a:hover {
+  color: var(--dark-text); 
+}
+
+p a {
+    text-decoration: none;
+    color: var(--medium-text);
+    font-weight: 700;
+    border-bottom: 2px solid;
+    display: inline-block;
+}
+
+p a:hover { 
+  color: var(--featured-text); 
 }
 
 /* Custom CSS */

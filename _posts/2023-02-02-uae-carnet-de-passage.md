@@ -64,7 +64,7 @@ Getting your UAE Carnet de Passage is surprisingly quick and straightforward - o
 
 #### **Step 1: Emirates Motorsports Organization (EMSO)**
 
-- **Location:** [Emirates Motorsports Organization (EMSO)](https://maps.app.goo.gl/faLyZ8XF4LVbK6Xc6) 
+- **Location:** [Emirates Motorsports Organization (EMSO)](https://maps.app.goo.gl/faLyZ8XF4LVbK6Xc6){: target="_blank" rel="noopener"}
 - **Opening Time:** 9:00 AM 
 - **Pro Tip:** Arrive early to avoid lines
 
@@ -80,7 +80,7 @@ The 500 AED deposit ensures you're not illegally exporting the vehicle - it's fu
 
 #### **Step 2: CARS Vehicle Testing Centre**
 
-- **Location:** [CARS Vehicle Testing Centre](https://maps.app.goo.gl/koZyMGqmXLyqEsgQ6) (RTA licensed) 
+- **Location:** [CARS Vehicle Testing Centre](https://maps.app.goo.gl/koZyMGqmXLyqEsgQ6){: target="_blank" rel="noopener"} (RTA licensed) 
 - **Distance:** Just down the road from EMSO
 
 At this second location, you'll need to:

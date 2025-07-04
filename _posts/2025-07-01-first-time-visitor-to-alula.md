@@ -62,7 +62,7 @@ Whether AlUla's desert dust triggers allergies, you catch a cold, or experience 
 
 AlUla's desert sun is significantly more intense than most destinations. Sand reflection amplifies UV rays, and there's no urban smog to filter the sunlight. Even during cooler winter months, when AlUla weather feels pleasant, the sun remains extremely strong. Sunburn can ruin your Saudi Arabia adventure within minutes.
 
-**What to do about it: ** Pack high-quality sunscreen from home for your AlUla trip. Local pharmacies stock plenty of sunscreen options if you need more. Wear a hat or bring a scarf for additional coverage. A light windbreaker is essential for summer AlUla visits.
+**What to do about it:** Pack high-quality sunscreen from home for your AlUla trip. Local pharmacies stock plenty of sunscreen options if you need more. Wear a hat or bring a scarf for additional coverage. A light windbreaker is essential for summer AlUla visits.
 
 ## Planning Your **Perfect** AlUla Experience
 
