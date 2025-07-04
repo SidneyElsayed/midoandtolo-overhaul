@@ -10,7 +10,7 @@ featured: true
 categories:
     - life
     - saudi arabia
-featured_image: /uploads/midoandtolo-1.jpg
+featured_image: /images/tolo-green-headscarf.jpg
 seo:
     title: Expat Life in Saudi Arabia 2025 | A Guide to Living in AlUla
     description: >-

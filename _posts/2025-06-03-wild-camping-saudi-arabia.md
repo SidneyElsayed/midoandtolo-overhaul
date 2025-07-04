@@ -10,7 +10,7 @@ featured: true
 categories:
     - life
     - saudi arabia
-featured_image: /uploads/midoandtolo-1.jpg
+featured_image: /images/raptor-beach-sunset.jpg
 seo:
     title: Wild Camping Saudi Arabia | Road Trip Guide & Overland Travel Tips 2025
     description: >-

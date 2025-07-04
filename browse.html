@@ -1,0 +1,50 @@
+---
+layout: default
+title: Browse | midoandtolo
+seo:
+  title: Saudi Arabia Travel Blog | Adventure Stories, AlUla Guides & Expat Life | Mido and Tolo
+  description: >-
+    Explore our collection of Saudi Arabia travel stories, diving adventures, and cultural discoveries from Mido and Tolo - a travel couple sharing authentic Middle East experiences, from AlUla road trips to expat life guides and more.
+  social_image:
+  twitter_card:
+  keywords: Saudi Arabia travel blog, adventure travel stories, AlUla travel guides, Egypt diving blog, expat life Saudi Arabia, Middle East travel, Red Sea diving, Saudi road trips, travel couple blog, cultural travel stories
+  hide-from-google: false
+---
+<!------------------------ Split blog loop (part 1) ------------------------>
+<section class="p-12">
+
+    <div class="p-12 pt-0 mb-1 text-center">
+        <h2 class=""> Road trips, diving adventures, and expat life stories </h2>
+        <p>From the hippie beach town of Dahab to overlanding Saudi Arabia to remodelling a farm house in AlUla and other travels in between, there’s loads of adventures, insights and everyday life posts to choose from.</p>
+    </div>
+
+    <div class="grid grid-cols-2">
+
+        {% for post in site.posts limit:100 %}
+
+        <a class="col-span-2 md:col-span-1 post-item p-10" href="{{ post.url }}">
+            <div class="grid grid-cols-4">
+                <div class="col-span-1 content-center pr-3">
+                    <div class="">
+                      <img src="{{ post.featured_image }}" class="aspect-square">
+                    </div>
+    
+                </div>
+                <div class="col-span-3">
+
+                    {% for item in post.categories %}
+                        <span class="tag"> {{item}} </span>
+                    {% endfor %}
+            
+                    <h4 class="mt-2 mb-4 featured-font"> {{ post.title }} </h4>
+                    <p class="subtitle hidden sm:block"> {{ post.description }} </p>
+            
+                </div>
+            </div>
+        </a>
+
+        {% endfor %}
+
+    </div>
+
+</section>

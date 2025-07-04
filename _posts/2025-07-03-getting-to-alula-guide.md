@@ -10,7 +10,7 @@ featured: true
 categories:
     - life
     - saudi arabia
-featured_image: /uploads/midoandtolo-1.jpg
+featured_image: /images/ulh-airport-sign.jpg
 seo:
     title: How to Get to AlUla, Saudi Arabia | Flights, Visas & Travel Guide 2025
     description: >-

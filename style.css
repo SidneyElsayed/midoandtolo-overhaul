@@ -64,7 +64,7 @@ p, li {
   font-size: 1rem;
 }
 
-
+.subtitle         { font-size: 0.8rem; }
 
 /* Bold for featured-font-highlight hack */
 h1 strong {
@@ -115,6 +115,14 @@ h2 {
 h3 {
   font-size: 24px;
 } */
+
+/* Backgroun Image Styles */
+
+.landscape     { padding-bottom: 66% ; }
+.portrait-tall { padding-bottom: 175%; }
+.portrait      { padding-bottom: 125%; }
+.square        { padding-bottom: 100%; }
+
 
 /* ------------ Blogging elements  ----------------------- */
 

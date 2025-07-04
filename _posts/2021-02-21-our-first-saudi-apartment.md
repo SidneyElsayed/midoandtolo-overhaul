@@ -10,7 +10,7 @@ featured: true
 categories:
     - life
     - saudi arabia
-featured_image: /uploads/midoandtolo-1.jpg
+featured_image: /images/date-palms-from-below-alula.jpg
 seo:
     title: Moving to Saudi Arabia | Our First Apartment in AlUla - Expat Life Reality
     description: >-
