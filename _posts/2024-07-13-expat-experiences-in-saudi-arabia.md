@@ -48,7 +48,7 @@ Most local Saudis primarily speak Arabic or may feel shy about using their Engli
 
 Learning basic Arabic phrases significantly improves your daily expat experience in Saudi Arabia. When communication gets tricky, Google Translate works wonders for bridging language gaps.
 
-#### Cultural Adaptation Tips for Expats
+##### **Cultural Adaptation Tips for Expats**
 
 Saudi families are incredibly family-oriented and remarkably generous people. There's often a mindset shift required if you're moving to Saudi Arabia from Western countries and expect people to be closed-minded. 
 
@@ -64,21 +64,21 @@ From this main group, specialized communities branch out covering hiking enthusi
 ## Day-to-Day Expat Life
 ### Routine and Lifestyle **Adjustments** in AlUla
 
-#### Grocery Shopping for Expats in Saudi Arabia
+##### **Grocery Shopping for Expats in a small town**
 
 AlUla doesn't have large international supermarkets like major Saudi cities. Instead, you'll shop at family-run grocery stores, a vibrant fruit and vegetable market, and local butchers. The growing expat community has influenced local inventory – you'll find organic sections with chia seeds, flax seeds, quinoa, and other international health foods.
 
 Living in AlUla teaches you to appreciate buying smaller quantities of fresh, local produce rather than bulk shopping typical of expat life in compound communities.
 
-#### Alcohol-Free Living in Saudi Arabia
+##### **Alcohol-Free Living in Saudi Arabia**
 
-As someone who previously enjoyed beer and wine before moving to Saudi Arabia, this represented a significant lifestyle adjustment – but ultimately a positive one. With alcohol simply not available, you discover entertainment and relaxation in other activities.
+As someone who previously enjoyed beer and wine before moving to Saudi Arabia, this represented a significant lifestyle adjustment – but ultimately a positive one. With alcohol simply not available, you discover entertainment in other activities.
 
-While there's occasional talk of alcohol becoming available in hotels for tourists, current expat life in Saudi Arabia remains completely dry. Many expats find this leads to better health, clearer thinking, and more meaningful social connections.
+While there's occasional talk of alcohol becoming available in hotels for tourists, current expat life in Saudi Arabia remains dry. Many expats find this leads to better health, and more meaningful social connections.
 
-#### Embracing a Slower Pace of Life
+##### **Embracing a Slower Pace of Life**
 
-Transitioning from a mega-city like Dubai to AlUla creates a complete lifestyle transformation. Skyscrapers get swapped for star-filled desert skies, and food delivery apps get traded for picking fresh herbs from local farms.
+Transitioning from a mega-city like Dubai to AlUla creates a complete lifestyle transformation. Skyscrapers get swapped for star-filled desert skies, and food delivery apps get traded for picking fresh herbs from the local veggie market.
 
 Fresh mountain air fills your lungs and desert serenity soaks into your soul. While some expats still return to Dubai every other weekend, many of us genuinely love expat life in AlUla and cherish the opportunity to simply exist in this magical place.
 
