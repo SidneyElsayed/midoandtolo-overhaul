@@ -584,6 +584,9 @@ video {
 .grid-cols-6 {
     grid-template-columns: repeat(6, minmax(0, 1fr));
 }
+.grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+}
 .content-center {
     align-content: center;
 }
@@ -605,6 +608,9 @@ video {
 }
 .gap-y-10 {
     row-gap: 2.5rem;
+}
+.self-center {
+    align-self: center;
 }
 .overflow-hidden {
     overflow: hidden;
