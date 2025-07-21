@@ -15,7 +15,7 @@
       <h4 class="featured-font"> Recent Posts </h4>
       <nav class="recent-posts-nav"> 
           {% for post in site.posts limit:8 %}
-                <a href="{{post.url}}"> {{post.title}}</a>
+                <a href="{{post.url}}" class="block leading-7"> {{post.title}}</a>
           {% endfor %}
       </nav>
   </div>
