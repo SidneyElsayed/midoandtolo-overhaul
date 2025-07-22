@@ -548,6 +548,9 @@ video {
 .mt-8 {
     margin-top: 2rem;
 }
+.mt-4 {
+    margin-top: 1rem;
+}
 .block {
     display: block;
 }
@@ -808,6 +811,10 @@ video {
 .text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+}
+.text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
 }
 .font-bold {
     font-weight: 700;

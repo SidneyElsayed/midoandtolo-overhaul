@@ -5,3 +5,8 @@ collections:
   archives: 
     output: true
     permalink: /:title
+  destinations:
+    output: true
+    permalink: /:title
+baseurl: ""
+url: "midoandtolo.com"
