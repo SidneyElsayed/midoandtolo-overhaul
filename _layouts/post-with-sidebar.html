@@ -14,12 +14,12 @@ layout: default
             {% endfor %}
             
             <h1 class="featured-font"> {{ page.title }} </h1>
-            <h3 class="featured-font"> {{ page.subtitle }} </h3>
+            <h3 class="detail-font text-lg uppercase opacity-50"> {{ page.subtitle }} </h3>
             
             <p class="post-info"> by {{ page.author }} | {{ page.date | date_to_string }} | {{ page.read }} read </p>
          
         </div>
-        <div class="pr-12">
+        <div class="pr-12 pt-8">
 
             {{content}}
 

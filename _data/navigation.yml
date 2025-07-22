@@ -49,11 +49,11 @@ footer-links:
   - heading: Stories
     links:
     - text: Origin Story
-      url: /
+      url: /posts/2021/origin-story
     - text: Meet the Gang
-      url: /
+      url: /posts/2021/meet-the-gang
     - text: Cairo to Cambodia
-      url: /
+      url: /posts/2019/cairo-to-cambodia
   - heading: Let's Connect
     links:
     - text: Contact Us

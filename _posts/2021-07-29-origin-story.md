@@ -43,7 +43,7 @@ Seeing this was my in, I jumped over for a "Zaki, who's your friend?!"
 
 ## The **First Date** Request
 
-Minutes after meeting, Mido asked me on a proper date set for the next evening. I accepted, but from that first minute, we talked until the bar closed, sat in the sand, munched a mango and watched the sunrise over the Red Sea.
+"Hi, I'm Ahmed, but my friends call me Mido. Can I take you on a date tomorrow night?" That was our introduction. I giddily accepted, but from that first minute, we talked until the bar closed, sat in the sand, munched a mango and watched the sunrise over the Red Sea.
 
 And it's been Mido and Tolo ever since.
 

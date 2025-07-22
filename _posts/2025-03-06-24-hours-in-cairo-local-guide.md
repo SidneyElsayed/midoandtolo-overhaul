@@ -38,6 +38,7 @@ Having recently returned with Mido to walk down memory lane, we revisited all my
 
 This Cairo itinerary focuses on downtown, so staying in the area maximizes your time. Garden City offers a nice contrast to the busy downtown energy while remaining perfectly located for exploring authentic Cairo neighborhoods.
 
+## A full breakdown of the **perfect** day
 ### **Morning:** Garden City - Cairo's Hidden Gem
 
 There's no rush to this Cairo morning. Wake at your leisure and make your way to Garden City, one of Cairo's most underrated neighborhoods. This quieter cousin to Mounira and downtown sets the perfect scene for a leisurely morning walk through authentic Cairo.
