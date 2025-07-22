@@ -1,0 +1,28 @@
+<!-- Since the post loop item uses a column class, make sure the parent container has a grid -->
+
+<div class="col-span-3 md:col-span-1 post-item p-8">
+  <a href="{{ post.url }}" class="mb-4 aspect-[5/4]"> 
+    <img src="{{ post.featured_image }}" class="inset-0 h-full w-full object-cover object-center pr-3">
+  </a>
+  <div class="px-8">
+      
+      {% for item in post.categories %}
+          <span class="tag"> {{item}} </span>
+      {% endfor %}
+
+      <h2 class="mt-8"> {{ post.title }} </h2>
+      <p> {{ post.description }} </p>
+      <a href="{{ post.url }}" class="subtle-button"> Read More </a>
+
+  </div>
+</div>
+
+
+<!-- Want the categories to link to their archive page? Replace the span with a link like this. 
+
+{% for item in post.categories %}
+  <span class="tag"> {{item}} </span>
+{% endfor %}
+
+
+-->
