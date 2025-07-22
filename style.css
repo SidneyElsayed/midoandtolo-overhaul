@@ -103,7 +103,7 @@ a {
 }
 
 a:hover {
-  color: var(--featured-text); 
+  color: var(--featured-color-dark-blue); 
 }
 
 .hover-white a:hover {
@@ -111,7 +111,7 @@ a:hover {
 }
 
 .hover-dark a:hover {
-  color: var(--dark-text); 
+  color: var(--featured-color-dark-blue); 
 }
 
 p a {

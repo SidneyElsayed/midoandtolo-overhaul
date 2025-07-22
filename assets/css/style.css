@@ -674,6 +674,12 @@ video {
 .bg-\[var\(--bg-color\)\] {
     background-color: var(--bg-color);
 }
+.bg-\[var\(--featured-color-v-light-blue\)\] {
+    background-color: var(--featured-color-v-light-blue);
+}
+.bg-\[var\(--featured-color-v-light-yellow\)\] {
+    background-color: var(--featured-color-v-light-yellow);
+}
 .bg-gray-500 {
     --tw-bg-opacity: 1;
     background-color: rgb(107 114 128 / var(--tw-bg-opacity));
@@ -970,7 +976,7 @@ a {
 }
 
 a:hover {
-  color: var(--featured-text); 
+  color: var(--featured-color-dark-blue); 
 }
 
 .hover-white a:hover {
@@ -978,7 +984,7 @@ a:hover {
 }
 
 .hover-dark a:hover {
-  color: var(--dark-text); 
+  color: var(--featured-color-dark-blue); 
 }
 
 p a {
