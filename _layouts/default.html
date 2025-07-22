@@ -5,8 +5,26 @@
 {% include /technical-code/site-head.html %}
 
 <body>
-    <!-- Color Scheme Styles -->
     <style>
+        :root {
+           --featured-color-yellow: {{site.data.style.featured-color-yellow}};
+           --featured-color-light-yellow: {{site.data.style.featured-color-light-yellow}};
+           --featured-color-v-light-yellow: {{site.data.style.featured-color-v-light-yellow}};
+           --featured-color-dark-blue: {{site.data.style.featured-color-medium-blue}};
+           --featured-color-blue: {{site.data.style.featured-color-blue}};
+           --featured-color-light-blue: {{site.data.style.featured-color-light-blue}};
+           --featured-color-v-light-blue: {{site.data.style.featured-color-v-light-blue}};
+           --featured-color-orange: {{site.data.style.featured-color-orange}};
+           --base-color: {{site.data.style.base-color}};
+
+           --max-width: {{site.data.style.max-width}}px;
+           --side-gap: {{site.data.style.horizontal-padding}};
+           --vert-gap: {{site.data.style.vertical-padding}};
+           --animation-speed: {{site.data.style.animation-speed}};
+           --small-padding: {{site.data.style.small-padding}};
+        }
+        
+
 
         :root,{% for scheme in site.data.style.schemes-colors %}
             .scheme-{{scheme.scheme_name}} {

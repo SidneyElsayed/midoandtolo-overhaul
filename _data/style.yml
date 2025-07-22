@@ -1,8 +1,18 @@
+featured-color-dark-blue: '#023047'
+featured-color-blue: '#219EBC'
+featured-color-light-blue: '#59B6CD'
+featured-color-v-light-blue: '#9BCEDE'
+featured-color-yellow: '#FFB703'
+featured-color-light-yellow: '#FFC942'
+featured-color-v-light-yellow: '#FFDA97'
+featured-color-orange: '#FB8500'
+grey-color: '#416475'
+light-grey-color: '#8097A3'
 schemes-colors:
   - scheme_name: base
     bg-color: '#ffffff'
     bg-secondary-color: '#f2ede1'
-    featured-color: '#197A91'
+    featured-color: '#219EBC'
     text-color: '#262626'
   - scheme_name: dark
     bg-color: '#1d1d1b'
