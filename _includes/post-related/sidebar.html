@@ -24,9 +24,9 @@
       <h4 class="pt-0 featured-font"> Explore Categories </h4>
       <nav> 
           {% for cat in site.archives limit:8 %}
-          {% unless cat.location == true %}
+          {% if cat.main-category == true %}
           <a href="{{cat.url}}" class="tag hover-dark"> {{cat.category}}</a>
-          {% endunless %}
+          {% endif %}
           {% endfor %}
       </nav>
   </div>

@@ -9,8 +9,8 @@ layout: default
 
         <div class="pr-12">
 
-            {% for item in page.categories %}
-                <span class="tag"> {{ item }}</span>
+            {% for item in page.categories | limit: page.categories-shown %}
+                <a href="/{{item | replace:' ','-'}}" class="tag"> {{ item }}</a>
             {% endfor %}
             
             <h1 class="featured-font"> {{ page.title }} </h1>

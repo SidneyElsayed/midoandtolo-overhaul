@@ -10,6 +10,8 @@ featured: true
 categories:
     - life
     - saudi arabia
+    - saudi arabia travel tips
+categories-shown: 2
 featured_image: /images/mido-zouzou-oasis.jpg
 seo:
     title: AlUla Travel Guide 2025 | First-Time Visitor Tips for Saudi Arabia

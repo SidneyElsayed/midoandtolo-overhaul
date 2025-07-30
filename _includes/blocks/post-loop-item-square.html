@@ -8,8 +8,8 @@
   </a>
   <div class="">
       
-      {% for item in post.categories %}
-          <span class="tag"> {{item}} </span>
+      {% for item in post.categories | limit: page.categories-shown %}
+        <a href="/{{item | replace:' ','-'}}" class="tag"> {{ item }}</a>
       {% endfor %}
 
       <h2 class="mt-4 text-2xl featured-font"> {{ post.title }} </h2>
