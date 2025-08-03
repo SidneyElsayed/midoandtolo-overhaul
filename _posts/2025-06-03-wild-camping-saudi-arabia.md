@@ -2,16 +2,16 @@
 layout: post-with-sidebar
 title: Road Trips & Wild Camping in Saudi Arabia 
 subtitle: The Ultimate Saudi Overland Adventure Guide
+sidebar-title: Wild Camping in Saudi Arabia 
 description: >-
     Discover why wild camping and road trips are the best way to experience Saudi Arabia, from cultural insights to practical overland travel tips for your Saudi adventure.
 author: Sidney
 read: 5 min
 featured: true
 categories:
-    - life
     - saudi arabia
     - saudi arabia travel tips
-categories-shown: 2
+categories-shown: 1
 featured_image: /images/raptor-beach-sunset.jpg
 seo:
     title: Wild Camping Saudi Arabia | Road Trip Guide & Overland Travel Tips 2025

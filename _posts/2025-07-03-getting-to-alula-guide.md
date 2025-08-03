@@ -2,16 +2,16 @@
 layout: post-with-sidebar
 title: How to Get to AlUla, Saudi Arabia
 subtitle: A Complete Travel Guide & Flight Information
+sidebar-title: How to Get to AlUla
 description: >-
     Planning your trip to AlUla? Complete guide to flights, visas, and travel options to reach Saudi Arabia's most magical destination in 2025.
 author: Sidney
 read: 5 min
 featured: true
 categories:
-    - life
     - saudi arabia
     - saudi arabia travel tips
-categories-shown: 2
+categories-shown: 1
 featured_image: /images/ulh-airport-sign.jpg
 seo:
     title: How to Get to AlUla, Saudi Arabia | Flights, Visas & Travel Guide 2025

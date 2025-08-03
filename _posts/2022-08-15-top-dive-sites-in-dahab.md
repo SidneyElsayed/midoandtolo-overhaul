@@ -1,7 +1,8 @@
 ---
 layout: post-with-sidebar
-title: Top 5 Best Dive Sites in Dahab Egypt
+title: Top 5 Best Dive Sites in Dahab, Egypt
 subtitle: Beyond the Famous Blue Hole
+sidebar-title: Top 5 Best Dive Sites in Dahab
 description: >-
     Discover the 5 best dive sites in Dahab beyond the Blue Hole, from Islands to Canyon - this is your insider guide to Dahab's top Red Sea diving spots.
 author: Sidney

@@ -2,6 +2,7 @@
 layout: post-with-sidebar
 title: Expat Life in Saudi Arabia 
 subtitle: A Complete Guide to Living in AlUla
+sidebar-title: Expat Life in Saudi Arabia
 description: >-
     Discover what expat life in Saudi Arabia really looks like in 2025. From AlUla's thriving community to cultural adaptation tips - this is your insider guide to making the move.
 author: Sidney

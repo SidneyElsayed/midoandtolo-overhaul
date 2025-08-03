@@ -2,15 +2,16 @@
 layout: post-with-sidebar
 title: Our First Saudi Apartment
 subtitle: Musings on Expat Life in AlUla 
+sidebar-title: Our First Saudi Apartment
 description: >-
     Real thoughts on our first apartment in AlUla, Saudi Arabia. Sometimes expat life isn't picture-perfect, but there's always something to smile about.
 author: Sidney
 read: 5 min
 featured: true
 categories:
-    - life
     - saudi arabia
-categories-shown: 2
+    - stories
+categories-shown: 1
 featured_image: /images/date-palms-from-below-alula.jpg
 seo:
     title: Moving to Saudi Arabia | Our First Apartment in AlUla - Expat Life Reality

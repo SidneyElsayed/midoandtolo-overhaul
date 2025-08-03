@@ -2,16 +2,16 @@
 layout: post-with-sidebar
 title: Cairo to Cambodia 
 subtitle: Finding Familiar Connections in Unexpected Places
+sidebar-title: Cairo to Cambodia 
 description: >-
     While Cairo and Cambodia seem nothing alike, discover the surprising connections between two places I've called home. 
 author: Sidney
 read: 5 min
 featured: true
 categories:
-    - life
     - egypt
     - stories
-categories-shown: 2
+categories-shown: 1
 featured_image: /images/bowl-of-soup-cambodia.jpg
 seo:
     title: How We Met in Dahab Egypt – Our Love Story Origin | Mido and Tolo

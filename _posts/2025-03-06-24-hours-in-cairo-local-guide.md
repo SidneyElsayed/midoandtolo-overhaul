@@ -2,6 +2,7 @@
 layout: post-with-sidebar
 title: Not your Typical 24 Hours in Cairo
 subtitle: Local's Guide to Egypt's Living, Breathing Capital
+sidebar-title: Not your Typical 24 Hours in Cairo
 description: >-
     Cairo is obviously on your Egypt itinerary, but this day is not that. You’ll
     see no pyramids, ride no camels. This day is for Cairo, the living,
@@ -10,10 +11,9 @@ author: Sidney
 read: 5 min
 featured: true
 categories:
-    - life
     - egypt
     - food
-categories-shown: 3
+categories-shown: 2
 featured_image: /images/tolo-in-moaz-street.jpg
 seo:
     title: 24 Hours in Cairo, Egypt | A Local's Guide to an Authentic Cairo Experience 2025

@@ -2,16 +2,16 @@
 layout: post-with-sidebar
 title: Origin Story
 subtitle: How Ahmed and Sidney Met in Dahab, Egypt
+sidebar-title: Origin Story
 description: >-
     In a hippie beach town in Egypt, Ahmed met Sidney. Read the full love story and learn how it's been Mido and Tolo ever since.
 author: Sidney
 read: 5 min
 featured: true
 categories:
-    - life
     - egypt
     - stories
-categories-shown: 2
+categories-shown: 1
 featured_image: /images/tolo-beach-dahab-origin-story.jpg
 seo:
     title: How We Met in Dahab Egypt – Our Love Story Origin | Mido and Tolo

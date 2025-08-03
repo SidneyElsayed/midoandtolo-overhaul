@@ -2,16 +2,16 @@
 layout: post-with-sidebar
 title: First-Time Visitor's Guide to AlUla
 subtitle: Essential Travel Tips for Saudi Arabia
+sidebar-title: First-Time Visitor's Guide to AlUla
 description: >-
     Planning your first trip to AlUla? Get insider tips on what to pack, driving advice, and practical travel planning for Saudi Arabia's most magical destination.
 author: Sidney
 read: 5 min
 featured: true
 categories:
-    - life
     - saudi arabia
     - saudi arabia travel tips
-categories-shown: 2
+categories-shown: 1
 featured_image: /images/mido-zouzou-oasis.jpg
 seo:
     title: AlUla Travel Guide 2025 | First-Time Visitor Tips for Saudi Arabia

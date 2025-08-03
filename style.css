@@ -49,6 +49,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
 }
 
+h2 {
+  margin-top: 3rem;
+}
+
 h2:last-child, 
 h3:last-child, 
 h4:last-child, 
@@ -103,7 +107,7 @@ a {
 }
 
 a:hover {
-  color: var(--featured-color-dark-blue); 
+  color: var(--featured-color-blue); 
 }
 
 .hover-white a:hover {

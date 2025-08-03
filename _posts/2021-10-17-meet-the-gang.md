@@ -2,15 +2,16 @@
 layout: post-with-sidebar
 title: Meet the Gang
 subtitle: Mido, Tolo, ZouZou & Our Adventure Family
+sidebar-title: Meet the Gang
 description: >-
     Everyone in the family has a name. Well that might sound obvious, but not when you realize who and what is considered part of the family.
 author: Sidney
 read: 5 min
 featured: true
 categories:
-    - life
     - saudi arabia
-categories-shown: 2
+    - stories
+categories-shown: 1
 featured_image: /images/mido-zouz-balloon.jpg
 seo:
     title: Meet the Gang | Mido, Tolo, ZouZou & Our Saudi Arabia Adventure Family

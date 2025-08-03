@@ -2,6 +2,7 @@
 layout: post-with-sidebar
 title: Egypt's Blue Hole in Dahab 
 subtitle: A Complete Diving & Snorkeling Guide to the Red Sea's Famous Blue Hole
+sidebar-title: Egypt's Blue Hole
 description: >-
     Discover Egypt's Blue Hole in Dahab - one of only 10 Blue Holes on Earth. Complete guide to diving, snorkeling, and visiting this Red Sea diving legend.
 author: Sidney

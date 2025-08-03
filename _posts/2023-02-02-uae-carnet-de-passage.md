@@ -2,15 +2,16 @@
 layout: post-with-sidebar
 title: How to Get a Carnet de Passage in UAE
 subtitle: A Complete Dubai Guide for Overland Travel
+sidebar-title: Carnet de Passage from UAE
 description: >-
     Step-by-step guide to getting your Carnet de Passage in Dubai for overland travel. Exact locations, costs, and requirements for your UAE car passport for overland travel in the GCC.
 author: Sidney
 read: 5 min
 featured: true
 categories:
-    - life
     - uae
-categories-shown: 2
+    - logistics
+categories-shown: 1
 featured_image: /images/mido-carnet-de-passage-office-uae.jpg
 seo:
     title: Carnet de Passage UAE | How to Get Your Car Passport in Dubai 2025
