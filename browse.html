@@ -22,23 +22,29 @@ seo:
 
         {% for post in site.posts limit:100 %}
 
-        <a class="col-span-2 md:col-span-1 post-item p-10" href="{{ post.url }}">
-            <div class="grid grid-cols-5">
-                <div class="col-span-2 aspect-square self-center">
-                      <img src="{{ post.featured_image }}" class="inset-0 h-full w-full object-cover object-center pr-3">
-                </div>
-                <div class="col-span-3">
 
-                    {% for item in post.categories %}
-                        <span class="tag"> {{item}} </span>
-                    {% endfor %}
-            
+        <div class="grid grid-cols-5 col-span-2 md:col-span-1 post-item p-10">
+            <!-- Clickable Image -->
+            <div class="col-span-2 aspect-square self-center">
+                <a class="" href="{{ post.url }}">
+                    <img src="{{ post.featured_image }}" class="inset-0 h-full w-full object-cover object-center pr-3">
+                </a>
+            </div>
+
+            <div class="col-span-3">
+            <!-- Clickable Tags -->
+            {% for item in post.categories | limit: post.categories-shown %}
+                <a href="/{{item | replace:' ','-'}}" class="tag"> {{ item }}</a>
+            {% endfor %}
+                <!-- Clickable Text -->
+                <a class="" href="{{ post.url }}">
                     <h4 class="mt-2 mb-4 featured-font"> {{ post.title }} </h4>
                     <p class="subtitle hidden sm:block"> {{ post.description }} </p>
-            
-                </div>
+                </a>
+        
             </div>
-        </a>
+        </div>
+
 
         {% endfor %}
 

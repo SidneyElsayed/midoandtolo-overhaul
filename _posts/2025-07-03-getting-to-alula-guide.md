@@ -10,6 +10,8 @@ featured: true
 categories:
     - life
     - saudi arabia
+    - saudi arabia travel tips
+categories-shown: 2
 featured_image: /images/ulh-airport-sign.jpg
 seo:
     title: How to Get to AlUla, Saudi Arabia | Flights, Visas & Travel Guide 2025

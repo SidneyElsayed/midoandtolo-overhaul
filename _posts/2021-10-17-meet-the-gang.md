@@ -10,6 +10,7 @@ featured: true
 categories:
     - life
     - saudi arabia
+categories-shown: 2
 featured_image: /images/mido-zouz-balloon.jpg
 seo:
     title: Meet the Gang | Mido, Tolo, ZouZou & Our Saudi Arabia Adventure Family

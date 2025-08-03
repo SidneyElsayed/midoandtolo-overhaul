@@ -23,7 +23,7 @@ header-links:
     - text: Logistics
       url: /
   - text: Stories
-    url: /
+    url: /stories
     sublinks:
     - text:
   - text: Contact

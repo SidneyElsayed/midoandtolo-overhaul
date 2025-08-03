@@ -11,6 +11,7 @@ categories:
     - diving
     - travel
     - egypt
+categories-shown: 3
 featured_image: /images/scuba-diving-tanks.jpg
 seo:
     title: Best Dive Sites Dahab Egypt | Top 5 Red Sea Diving Spots Beyond Blue Hole

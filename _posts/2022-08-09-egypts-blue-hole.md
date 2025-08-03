@@ -11,6 +11,7 @@ categories:
     - diving
     - travel
     - egypt
+categories-shown: 3
 featured_image: /images/tolo-diving-red-sea-dahab.jpg
 seo:
     title: Blue Hole Egypt Dahab | Complete Diving Guide & Travel Tips

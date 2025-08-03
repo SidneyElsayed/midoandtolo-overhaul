@@ -8,7 +8,7 @@
   </a>
   <div class="">
       
-      {% for item in post.categories | limit: page.categories-shown %}
+      {% for item in post.categories | limit: post.categories-shown %}
         <a href="/{{item | replace:' ','-'}}" class="tag"> {{ item }}</a>
       {% endfor %}
 

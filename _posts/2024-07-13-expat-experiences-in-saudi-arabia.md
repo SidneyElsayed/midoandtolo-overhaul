@@ -10,6 +10,8 @@ featured: true
 categories:
     - life
     - saudi arabia
+    - saudi arabia travel tips
+categories-shown: 2
 featured_image: /images/tolo-green-headscarf.jpg
 seo:
     title: Expat Life in Saudi Arabia 2025 | A Guide to Living in AlUla
