@@ -11,6 +11,7 @@ featured: true
 categories:
     - saudi arabia
     - saudi arabia travel tips
+    - logistics
 categories-shown: 1
 featured_image: /images/mido-zouzou-oasis.jpg
 seo:

@@ -11,7 +11,7 @@ featured: true
 categories:
     - saudi arabia
     - stories
-categories-shown: 1
+categories-shown: 2
 featured_image: /images/date-palms-from-below-alula.jpg
 seo:
     title: Moving to Saudi Arabia | Our First Apartment in AlUla - Expat Life Reality

@@ -33,7 +33,7 @@ seo:
 
             <div class="col-span-3">
             <!-- Clickable Tags -->
-            {% for item in post.categories | limit: post.categories-shown %}
+            {% for item in post.categories limit: post.categories-shown %}
                 <a href="/{{item | replace:' ','-'}}" class="tag"> {{ item }}</a>
             {% endfor %}
                 <!-- Clickable Text -->

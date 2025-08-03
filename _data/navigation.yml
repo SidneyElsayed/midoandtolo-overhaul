@@ -3,12 +3,14 @@ header-links:
     url: /
     sublinks:
     - text: Cultural Insights
-      url: /
+      url: /cultural-insights
     - text: Food & Drinks
       url: /food
   - text: Travel Tips
     url: /
     sublinks:
+    - text: Logistics
+      url: /logistics
     - text: Moving to Saudi
       url: /posts/2024/expat-experiences-in-saudi-arabia
     - text: Tips for Saudi
@@ -18,8 +20,6 @@ header-links:
     sublinks:
     - text: Wild Camping
       url: /posts/2025/wild-camping-saudi-arabia
-    - text: Logistics
-      url: /
   - text: Stories
     url: /stories
     sublinks:
