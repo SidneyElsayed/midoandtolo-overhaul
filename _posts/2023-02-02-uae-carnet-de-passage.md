@@ -9,9 +9,10 @@ author: Sidney
 read: 5 min
 featured: true
 categories:
+    - overland
     - uae
     - logistics
-categories-shown: 1
+categories-shown: 2
 featured_image: /images/mido-carnet-de-passage-office-uae.jpg
 seo:
     title: Carnet de Passage UAE | How to Get Your Car Passport in Dubai 2025

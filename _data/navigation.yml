@@ -52,14 +52,6 @@ footer-links:
       url: /posts/2021/meet-the-gang
     - text: Cairo to Cambodia
       url: /posts/2019/cairo-to-cambodia
-  - heading: Let's Connect
-    links:
-    - text: Contact Us
-      url: /
-    - text: Work With Us
-      url: /
-    - text: Follow Along
-      url: /
   - heading: Travel Tips
     links:
     - text: Weekend Getaways
@@ -67,6 +59,14 @@ footer-links:
     - text: Tips for Saudi
       url: /
     - text: Logistics
+      url: /
+  - heading: Let's Connect
+    links:
+    - text: Contact Us
+      url: /
+    - text: Work With Us
+      url: /
+    - text: Follow Along
       url: /
 footer-contact:
   heading: Company Name

@@ -1,0 +1,46 @@
+---
+layout: default
+title: Sitemap 
+seo:
+  title: Sitemap | Mido and Tolo
+  description: >-
+    See a full, comprehensive list of all articles, blogs posts, guides, shop,
+    pages and more of the midoandtolo website.
+  social_image:
+  twitter_card:
+  keywords: sitemap
+  hide-from-google: false
+---
+<section class="sitemap">
+    <div class="">
+        <h1 class=""> Sitemap </h1> 
+    </div>
+    <div class="grid grid-cols-4 col-span-4">
+        <h2 class="col-span-4 mb-0">Pages</h2>
+        <div class="col-span-4 sm:col-span-2 md:col-span-1 p-4 pl-0 sitemap">
+            <a href="/index.html">Home</a>
+            <a href="/about.html">About</a>
+            <a href="/about-us.html">About Us</a>
+        </div>
+        <div class="col-span-4 sm:col-span-2 md:col-span-1 p-4 sitemap">
+            <a href="/blog-archive.html">Archive</a>
+            <a href="/category-archive.html">Categories</a>
+            <a href="/destination-archive.html">Destinations</a>
+            <a href="/blog.html">Latest Posts</a>
+        </div>
+        <div class="col-span-4 sm:col-span-2 md:col-span-1 p-4 sitemap">
+            <a href="/contact.html">Contact Us</a>
+            <a href="/work-with-us.html">Work With Us</a>
+            <a href="/privacy-policy.html">Privacy Policy</a>
+            <a href="/sitemap.html">Sitemap</a>
+        </div>
+    </div>
+    <div class="grid grid-cols-2 col-span-2">
+        <h2 class="grid grid-cols-2 col-span-2"> Pages by Category </h2> 
+        <div class="grid grid-cols-1 col-span-1 p-4 pl-0">
+
+            {% include blocks/sitemap-category-loop.html %}
+
+        </div>
+    </div>
+</section>
