@@ -20,30 +20,22 @@ header-links:
     sublinks:
     - text: Wild Camping
       url: /posts/2025/wild-camping-saudi-arabia
-  - text: Stories
-    url: /stories
-    sublinks:
-    - text:
-  - text: Contact
-    url: /contact
-    sublinks:
-    - text:
   - text: Browse
     url: /browse
-    sublinks:
-    - text:
+  - text: Contact
+    url: /contact
 
 footer-links:
   - heading: Lastest Posts
     links:
     - text: Getting to AlUla
-      url: /
+      url: /posts/2025/getting-to-alula-guide
     - text: Expat Experiences in Saudi
-      url: /
+      url: /posts/2024/expat-experiences-in-saudi-arabia
     - text: Road Trips & Wild Camping
-      url: /
+      url: /posts/2025/wild-camping-saudi-arabia
     - text: Egypt's Blue Hole
-      url: /
+      url: /posts/2022/egypts-blue-hole
   - heading: Stories
     links:
     - text: Origin Story
@@ -57,13 +49,13 @@ footer-links:
     - text: Weekend Getaways
       url: /
     - text: Tips for Saudi
-      url: /
+      url: /saudi-arabia-travel-tips
     - text: Logistics
-      url: /
+      url: /logistics
   - heading: Let's Connect
     links:
     - text: Contact Us
-      url: /
+      url: /contact
     - text: Work With Us
       url: /
     - text: Follow Along

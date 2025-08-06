@@ -555,6 +555,9 @@ video {
 .mt-4 {
     margin-top: 1rem;
 }
+.mt-0 {
+    margin-top: 0px;
+}
 .block {
     display: block;
 }
@@ -610,12 +613,6 @@ video {
 .transform {
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
-.grid-flow-row {
-    grid-auto-flow: row;
-}
-.grid-flow-col {
-    grid-auto-flow: column;
-}
 .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -662,9 +659,6 @@ video {
 .whitespace-pre {
     white-space: pre;
 }
-.rounded-2xl {
-    border-radius: 1rem;
-}
 .border {
     border-width: 1px;
 }
@@ -692,10 +686,6 @@ video {
 }
 .bg-\[var\(--featured-color-v-light-yellow\)\] {
     background-color: var(--featured-color-v-light-yellow);
-}
-.bg-gray-500 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(107 114 128 / var(--tw-bg-opacity));
 }
 .bg-white {
     --tw-bg-opacity: 1;
@@ -788,6 +778,9 @@ video {
 .pb-6 {
     padding-bottom: 1.5rem;
 }
+.pl-0 {
+    padding-left: 0px;
+}
 .pr-12 {
     padding-right: 3rem;
 }
@@ -802,9 +795,6 @@ video {
 }
 .pt-8 {
     padding-top: 2rem;
-}
-.pl-0 {
-    padding-left: 0px;
 }
 .text-left {
     text-align: left;
@@ -997,35 +987,6 @@ h4 strong {
   font-family: "Permanent Marker", sans-serif;
 }
 
-/* Basic p & a styles */
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-a:hover {
-  color: var(--featured-color-blue); 
-}
-
-.hover-white a:hover {
-  color: white; 
-}
-
-.hover-dark a:hover {
-  color: var(--featured-color-dark-blue); 
-}
-
-p a {
-    text-decoration: none;
-    color: var(--medium-text);
-    font-weight: 700;
-    border-bottom: 2px solid;
-    display: inline-block;
-}
-
-p a:hover { 
-  color: var(--featured-text); 
-}
 
 /* Custom CSS */
 section {
@@ -1080,6 +1041,11 @@ h3 {
   margin-right: 0.4rem;
 }
 
+.tag:hover {
+  color: var(--featured-color-yellow);
+  opacity: 1;
+}
+
 .post-info {
   font-size: 0.8rem;
 }
@@ -1094,8 +1060,49 @@ h3 {
 .button-featured {
     background-color: var(--featured-color);
     color: var(--bg-color);
-    display: block;
+    border: 1px solid var(--featured-color);
+    display: inline-block;
+    font-family: "Permanent Marker", sans-serif;
 }
+
+.button-featured:hover {
+  background-color: var(--bg-color);
+  color: var(--featured-color);
+  border: 1px solid var(--bg-color);
+  display: inline-block;
+  font-family: "Permanent Marker", sans-serif;
+}
+
+/* Basic p & a styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: var(--featured-color-blue); 
+}
+
+.hover-white a:hover {
+  color: white; 
+}
+
+.hover-dark a:hover {
+  color: var(--featured-color-dark-blue); 
+}
+
+p a {
+    text-decoration: none;
+    color: var(--medium-text);
+    font-weight: 700;
+    border-bottom: 2px solid;
+    display: inline-block;
+}
+
+p a:hover { 
+  color: var(--featured-text); 
+}
+
 
 /* Form Styles */
 
@@ -1153,8 +1160,8 @@ input:focus, textarea:focus {
 .hover\:text-\[var\(--featured-color\)\]:hover {
     color: var(--featured-color);
 }
-.focus\:bg-\[var\(--featured-color-v-light-blue\)\]:focus {
-    background-color: var(--featured-color-v-light-blue);
+.focus\:bg-\[var\(--featured-color-v-light-yellow\)\]:focus {
+    background-color: var(--featured-color-v-light-yellow);
 }
 .group:hover .group-hover\:block {
     display: block;
@@ -1162,9 +1169,6 @@ input:focus, textarea:focus {
 @media (min-width: 640px) {
     .sm\:col-span-2 {
         grid-column: span 2 / span 2;
-    }
-    .sm\:col-span-4 {
-        grid-column: span 4 / span 4;
     }
     .sm\:block {
         display: block;

@@ -5,43 +5,43 @@
       <div>
         <img src="/images/midoandtolo-driving-in-raptor.jpg" class="curve-point-right-sm-top">
       </div>
-      <div class="mb-4 p-4">
+      <div class="mb-4 p-4 hover-white">
           <p class="">We’re Ahmed and Sidney, just a couple of big kids sharing their adventures and showing that travel can be accessible.</p> 
-          <a href="/about-us.html" class="subtle-button hover-dark">More about us</a>
+          <a href="/about-us.html" class="subtle-button">More about us</a>
       </div>
   </div>
 
   <div class="bg-[var(--featured-color-v-light-blue)] curve-point-left-sm mb-4 p-4">
-      <h4 class="featured-font"> Recent Posts </h4>
-      <nav class="recent-posts-nav"> 
+      <h4 class="mt-2 featured-font"> Recent Posts </h4>
+      <nav class="recent-posts-nav hover-white"> 
           {% for page in site.posts limit:8 %}
-                <a href="{{page.url}}" class="block leading-7 pb-2 hover-dark"> {{page.sidebar-title}}</a>
+                <a href="{{page.url}}" class="block leading-7 pb-2"> {{page.sidebar-title}}</a>
           {% endfor %}
       </nav>
   </div>
 
   <div class="bg-[var(--featured-color-v-light-yellow)] curve-point-right-sm mb-4 p-4">
-      <h4 class="pt-0 featured-font"> Explore Categories </h4>
-      <nav> 
+      <h4 class="mt-2 featured-font"> Explore Categories </h4>
+      <nav class="hover-white"> 
           {% for cat in site.archives limit:8 %}
           {% if cat.main-category == true %}
-          <a href="{{cat.url}}" class="tag hover-dark"> {{cat.category}}</a>
+          <a href="{{cat.url}}" class="tag"> {{cat.category}}</a>
           {% endif %}
           {% endfor %}
       </nav>
   </div>
 
   <div class="bg-[var(--featured-color-v-light-blue)] curve-point-left-sm mb-4 p-4">
-      <h4 class="featured-font"> Explore Destinations </h4>
-      <nav> 
+      <h4 class="mt-2 featured-font"> Explore Destinations </h4>
+      <nav class="hover-white"> 
           {% for cat in site.archives %}
           {% if cat.location == true %}
-          <a href="{{cat.url}}" class="tag hover-dark"> {{cat.category}} </a>
+          <a href="{{cat.url}}" class="tag"> {{cat.category}} </a>
           {% endif %}
           {% endfor %}
       </nav>
   </div>
 
-  <div id="ml-form-embed-newsletter" class="bg-gray-500 ml-embedded" data-form="JLTXRY"></div>
+  <div id="ml-form-embed-newsletter" class="bg-[var(--featured-color-v-light-yellow)]  ml-embedded" data-form="JLTXRY"></div>
 
 </aside> <!-- end sidebar-->

@@ -105,35 +105,6 @@ h4 strong {
   font-family: "Permanent Marker", sans-serif;
 }
 
-/* Basic p & a styles */
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-a:hover {
-  color: var(--featured-color-blue); 
-}
-
-.hover-white a:hover {
-  color: white; 
-}
-
-.hover-dark a:hover {
-  color: var(--featured-color-dark-blue); 
-}
-
-p a {
-    text-decoration: none;
-    color: var(--medium-text);
-    font-weight: 700;
-    border-bottom: 2px solid;
-    display: inline-block;
-}
-
-p a:hover { 
-  color: var(--featured-text); 
-}
 
 /* Custom CSS */
 section {
@@ -188,6 +159,11 @@ h3 {
   margin-right: 0.4rem;
 }
 
+.tag:hover {
+  color: var(--featured-color-yellow);
+  opacity: 1;
+}
+
 .post-info {
   font-size: 0.8rem;
 }
@@ -202,8 +178,49 @@ h3 {
 .button-featured {
     background-color: var(--featured-color);
     color: var(--bg-color);
-    display: block;
+    border: 1px solid var(--featured-color);
+    display: inline-block;
+    font-family: "Permanent Marker", sans-serif;
 }
+
+.button-featured:hover {
+  background-color: var(--bg-color);
+  color: var(--featured-color);
+  border: 1px solid var(--bg-color);
+  display: inline-block;
+  font-family: "Permanent Marker", sans-serif;
+}
+
+/* Basic p & a styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: var(--featured-color-blue); 
+}
+
+.hover-white a:hover {
+  color: white; 
+}
+
+.hover-dark a:hover {
+  color: var(--featured-color-dark-blue); 
+}
+
+p a {
+    text-decoration: none;
+    color: var(--medium-text);
+    font-weight: 700;
+    border-bottom: 2px solid;
+    display: inline-block;
+}
+
+p a:hover { 
+  color: var(--featured-text); 
+}
+
 
 /* Form Styles */
 
