@@ -26,40 +26,46 @@ header-links:
     url: /contact
 
 footer-links:
-  - heading: Lastest Posts
+  - heading: Saudi Adventures
     links:
-    - text: Getting to AlUla
+    - text: First Time Visitor's Guide to AlUla
+      url: /posts/2025/first-time-visitor-to-alula
+    - text: Road Trips & Wild Camping
+      url: /posts/2025/wild-camping-saudi-arabia
+    - text: How to Get to AlUla
       url: /posts/2025/getting-to-alula-guide
     - text: Expat Experiences in Saudi
       url: /posts/2024/expat-experiences-in-saudi-arabia
-    - text: Road Trips & Wild Camping
-      url: /posts/2025/wild-camping-saudi-arabia
+  - heading: Diving & Travel
+    links:
     - text: Egypt's Blue Hole
       url: /posts/2022/egypts-blue-hole
-  - heading: Stories
-    links:
-    - text: Origin Story
-      url: /posts/2021/origin-story
-    - text: Meet the Gang
-      url: /posts/2021/meet-the-gang
+    - text: Top 5 Best Dive Sites in Dahab
+      url: /posts/2022/top-dive-sites-in-dahab
+    - text: Carenet de Passage from UAE
+      url: /posts/2023/uae-carnet-de-passage
     - text: Cairo to Cambodia
       url: /posts/2019/cairo-to-cambodia
-  - heading: Travel Tips
+  - heading: Getting Started
     links:
-    - text: Weekend Getaways
-      url: /
-    - text: Tips for Saudi
-      url: /saudi-arabia-travel-tips
+    - text: Meet the Gang
+      url: /posts/2021/meet-the-gang
+    - text: Getting to AlUla
+      url: /posts/2025/getting-to-alula-guide
+    - text: Road Trips & Wild Camping
+      url: /posts/2025/wild-camping-saudi-arabia
     - text: Logistics
       url: /logistics
-  - heading: Let's Connect
+  - heading: Connect & Explore
     links:
-    - text: Contact Us
-      url: /contact
+    - text: Instagram
+      url: https://www.instagram.com/midoandtolo/
+    - text: About Us
+      url: /
     - text: Work With Us
       url: /
-    - text: Follow Along
-      url: /
+    - text: Contact
+      url: /contact
 footer-contact:
   heading: Company Name
   map-link: maps.google.com
