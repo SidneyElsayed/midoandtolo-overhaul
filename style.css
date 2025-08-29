@@ -268,7 +268,79 @@ input:focus, textarea:focus {
 }
 
 
+/* About Us page elements */
+
+.person-container {
+  position: absolute;
+  display: flex;
+  vertical-align: baseline;
+  margin: 0;
+  border-radius: 100%;
+  right: 29%;
+  top: -10rem;
+  width: 250px;
+}
+
+/* White border for adding space to the bg-image */
+.border-xs { border: 2px solid white;}
+.border-sm { border: 1rem solid white;}
+.border-md { border: 2rem solid white;}
+.border-lg { border: 3rem solid white;}
+
 /* Back to Top Grid */
 .major-funders-grid {
     grid-template-columns: 12rem 1fr 1fr;
   }
+
+
+/* ------- MD Media Query (64em / 1024px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+
+@media(max-width:64em) {
+  .person-container-md {
+    position: absolute;
+    display: flex;
+    vertical-align: baseline;
+    margin: 0;
+    border-radius: 100%;
+    right: 23%;
+    top: -10rem;
+    width: 250px;
+  }
+}
+
+
+/* ------- SM Media Query (48em / 768px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 768px, or zoomed in equivalent */ 
+
+
+@media(max-width:48em) {
+  .person-container-sm {
+    position: absolute;
+    display: flex;
+    vertical-align: baseline;
+    margin: 0;
+    border-radius: 100%;
+    right: 31%;
+    top: -10rem;
+    width: 250px;
+  }
+}
+
+
+/* ------- XS Media Query (36em / 576px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+
+@media(max-width:36em) {
+
+  .person-container-xs {
+    position: absolute;
+    display: flex;
+    vertical-align: baseline;
+    margin: 0;
+    border-radius: 100%;
+    right: 19%;
+    top: -10rem;
+    width: 250px;
+  }
+}
