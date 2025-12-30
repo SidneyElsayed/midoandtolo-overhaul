@@ -1,0 +1,62 @@
+<section id="section-{{forloop.index}}">
+  <div class="max-width mx-auto sm:px-14 py-20 {% if block.hide-bottom-padding %} pb-0 lg:pb-16 {% endif %}">
+
+  <!-- Actual content starts here, so that the above has the max width -->
+
+
+  <!-- Section Heading -->
+  {% if block.section-heading_html %}
+
+  <div class="pb-12
+  
+  {% if block.large-text-alignment == 'left' %} text-left {% elsif block.large-text-alignment == 'center' %} text-center {% elsif block.large-text-alignment == 'right' %} text-right {% endif %}
+  
+  {% if block.large-heading-has-long-words %} large-heading-has-long-words {% endif %}">{{block.section-heading_html}}</div>
+
+  {% endif %}
+
+  
+  <div class="grid grid-cols-2">
+    <!-- Image -->
+    <div class="col-span-2 lg:col-span-1 relative lg:mr-12 aspect-square"> 
+        <img class="absolute inset-0 h-full w-full z-10 object-cover object-center" style="object-position: {{block.image-horizontal-focal-point}} {{block.image-vertical-focal-point}}" src="{{block.image}}" alt="{{block.alt | default: block.caption}}">
+    </div>
+
+    <!-- Text Block -->
+    <div class=" col-span-2 lg:col-span-1 pt-20 lg:pt-0 {% if block.text-placement == 'top' %} self-start {% elsif block.text-placement == 'center' %} self-center {% elsif block.text-placement == 'bottom' %} self-end {% endif %} 
+    
+    {% if block.image-placement == 'right' %} lg:pr-12 lg:order-first {% else %} lg:pl-12 {% endif %}">
+
+
+      <!-- Text Block Heading -->
+      {% if block.text-block-heading_html %}
+      <div>
+        <div class="pb-6 featured-text {% if block.heading-has-long-words %} heading-has-long-words {% endif %}">{{block.text-block-heading_html }}</div>
+      </div>
+      {% endif %}
+
+      <!-- Description -->
+      {% if block.description_html %}
+      <div>
+        <div class="pb-4 lg:text-lg">{{block.description_html}}</div>
+      </div>
+      {% endif %}
+
+      
+      <!-- Buttons -->
+      <div class="pt-3">
+        {% if block.button-1-link and block.button-1-text %}
+        <a href="{{block.button-1-link}}" class="px-4 py-2 my-2 mr-4 relative button-1 {{block.button-1-bg}} button-featured curve-point-left-sm" {% if block.button-1-link contains 'http' %} target="_blank" {% endif %}>{{block.button-1-text}}</a>
+        {% endif %}
+
+        {% if block.button-2-link and block.button-2-text %}
+        <a href="{{block.button-2-link}}" class="my-4 relative button-2 {{block.button-2-bg}} button-featured curve-point-right-sm" {% if block.button-2-link contains 'http' %} target="_blank" {% endif %}>{{block.button-2-text}}</a>
+        {% endif %}
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Don't delete the below; these are for the starting id and class above -->
+  </div>
+</section>
