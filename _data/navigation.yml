@@ -7,7 +7,7 @@ header-links:
     - text: Food & Drinks
       url: /food
   - text: Travel Tips
-    url: /
+    url: /travel-tips
     sublinks:
     - text: Logistics
       url: /logistics
@@ -16,7 +16,7 @@ header-links:
     - text: Tips for Saudi
       url: /saudi-arabia-travel-tips
   - text: On the Road
-    url: /
+    url: /on-the-road
     sublinks:
     - text: Wild Camping
       url: /posts/2025/wild-camping-saudi-arabia
