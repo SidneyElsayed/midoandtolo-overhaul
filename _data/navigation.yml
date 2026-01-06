@@ -1,6 +1,6 @@
 header-links:
   - text: Food & Culture
-    url: /
+    url: /food-and-culture
     sublinks:
     - text: Cultural Insights
       url: /cultural-insights

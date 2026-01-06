@@ -1,0 +1,36 @@
+<!-- Cards with Border Section -->
+<section class="py-28">
+
+  {% if block.section-heading_html %}
+
+  <div class="px-8 sm:px-16 pb-10">{{block.section-heading_html}}</div>
+
+  {% endif %}
+
+  <div class="gap-6 px-16 {% if items.size > 3 %} flex overflow-x-auto w-full {% else %} grid md:grid-cols-3 {% endif %}">
+
+    {% for item in block.card-loop %}
+
+      <!-- Card Loop -->
+      <div class="{% if item.size > 3 %} basis-[30%] shrink-0 {% else %} col-span-3 {% endif %}">
+        <div class="">
+          <img class="aspect-square object-cover w-full" src="{{item.image}}" alt="{{item.alt}}">
+        </div>
+        <div class="p-4">
+          <h4 class="featured-font">{{item.heading}}</h4>
+          <p class="">{{item.text}}</p>
+
+          {% if item.button-link and item.button-text %}
+
+          <a href="{{item.button-link}}" class="button-subtle text-sm"> {{item.button-text}} &#8594; </a>
+
+          {% endif %}
+
+        </div>
+      </div>
+    
+    {% endfor %}
+
+</div>
+
+</section>

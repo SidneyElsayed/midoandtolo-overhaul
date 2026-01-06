@@ -1,0 +1,49 @@
+<section id="section-{{forloop.index}}">
+  <div class="max-width mx-auto">
+
+  <!-- Actual content starts here, so that the above has the max width -->
+  <div class="grid grid-cols-2 gap-1 px-8 sm:px-16 py-16">
+    <!-- Large Text -->
+    {% if block.heading_html %}
+    <div class="
+
+    {% if block.large-text-width == 'full' %} col-span-2 {% elsif block.large-text-width == 'half' %} col-span-2 md:col-span-1 {% endif %}
+
+    {% if block.text-placement == 'top' %} self-start {% elsif block.text-placement == 'center' %} self-center {% elsif block.text-placement == 'bottom' %} self-end {% endif %}
+    
+    {% if block.large-text-alignment == 'left' %} text-left {% elsif block.large-text-alignment == 'center' %} text-center {% elsif block.large-text-alignment == 'right' %} text-right {% endif %}
+    
+    {% if block.heading-has-long-words %} heading-has-long-words {% endif %}"> {{block.heading_html}} 
+  </div>
+    {% endif %}
+
+    <!-- Paragraphs -->
+    <div class="lg:text-lg {% if block.paragraph-width == 'full' %} col-span-2 {% elsif block.paragraph-width == 'half' %} col-span-2 md:col-span-1 {% endif %} 
+    
+    {% if block.large-text-placement == 'right' %} md:order-first {% endif %}
+    
+    {% if block.paragraph-text-alignment == 'left' %} text-left {% elsif block.paragraph-text-alignment == 'center' %} text-center {% elsif block.paragraph-text-alignment == 'right' %} text-right {% endif %}">
+      {% if block.text_html %}
+        <p class="{% if block.heading %} pt-2 {% else %} pt-0 {% endif %} block">{{block.text_html}}</p>
+      {% endif %}
+
+
+
+      <!-- Buttons -->
+      <div class="pt-3 {% if block.button-alignment == 'left' %} text-left {% elsif block.button-alignment == 'center' %} text-center {% elsif block.button-alignment == 'right' %} text-right {% endif %}">
+        {% if block.button-1-link and block.button-1-text %}
+        <a href="{{block.button-1-link}}" class="px-4 py-2 my-2 mr-4 relative button-1 {{block.button-1-bg}}">{{block.button-1-text}}</a>
+        {% endif %}
+
+        {% if block.button-2-link and block.button-2-text %}
+        <a href="{{block.button-2-link}}" class="px-4 py-2 my-2 relative button-2 {{block.button-2-bg}}">{{block.button-2-text}}</a>
+        {% endif %}
+      </div>
+
+    </div>
+  
+  </div>
+
+  <!-- Don't delete the below; these are for the starting id and class above -->
+</div>
+</section>

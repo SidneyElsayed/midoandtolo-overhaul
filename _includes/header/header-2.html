@@ -1,23 +1,27 @@
 <header>
   
   <div class="max-width mx-auto">
-    <div class="flex justify-between p-4">
+    <div class="grid grid-cols-2 p-4">
       
-      <h1>LOGO</h1>
+      <div class="col-span-2 md:col-span-1">
+        <a href="/index" class="block justify-center">
+          <img src="/images/mido-tolo-color-logo-b.png" class="md:max-w-[40%] block">
+        </a>
+      </div>
 
-      <nav>
+      <nav class="col-span-2 md:col-span-1 justify-center">
       {% for link in site.data.navigation.header-links %}
 
         {% if link.sublinks %}
           <span class="relative group p-2">
         {% endif %}
         
-        <a href="{{link.url}}" class=" p-2 my-4">{{link.text}}</a>
+        <a href="{{link.url}}" class=" p-2 my-4 featured-font">{{link.text}}</a>
 
         {% if link.sublinks %}
         <div class="absolute pt-2 top-8 left-0 bg-[var(--bg-color)] hidden group-hover:block z-20">
           {% for sublink in link.sublinks %}
-            <a href="{{sublink.url}}" class="px-2 whitespace-pre block">{{sublink.text}}</a>
+            <a href="{{sublink.url}}" class="px-2 whitespace-pre block body-font">{{sublink.text}}</a>
           {% endfor %}
         </div>
           </span>

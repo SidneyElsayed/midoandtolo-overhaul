@@ -27,7 +27,7 @@
 
 
         :root,{% for scheme in site.data.style.schemes-colors %}
-            .scheme-{{scheme.scheme_name}} {
+            .scheme-{{scheme.scheme-name}} {
                 --bg-color: {{scheme.bg-color}};
                 --bg-secondary-color: {{scheme.bg-secondary-color}};
                 --featured-color: {{scheme.featured-color}};
@@ -37,11 +37,11 @@
     
     </style>
 
-    {% include /header/header-3.html %}
+    {% include /header/header-2.html %}
 
     {% for block in page.blocks %}
     <!-- {{block.id}} -->
-    <div class="scheme-{{block.scheme-color}}">
+    <div id="section-{{forloop.index}}" class="scheme-{{block.scheme-name}}">
         {% include /blocks/{{block.id}}.html %}
     </div>
     {% endfor %}

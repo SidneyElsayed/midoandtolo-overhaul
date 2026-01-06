@@ -9,23 +9,23 @@ featured-color-orange: '#FB8500'
 grey-color: '#416475'
 light-grey-color: '#8097A3'
 schemes-colors:
-  - scheme_name: base
+  - scheme-name: base
     bg-color: '#ffffff'
     bg-secondary-color: '#f2ede1'
     featured-color: '#219EBC'
     text-color: '#262626'
-  - scheme_name: dark
-    bg-color: '#1d1d1b'
+  - scheme-name: dark
+    bg-color: '#023047'
     bg-secondary-color: '#2d2d2b'
-    featured-color: '#227'
+    featured-color: '#219EBC'
     text-color: '#ffffff'
-  - scheme_name: featured
-    bg-color: '#f2ede1'
+  - scheme-name: featured
+    bg-color: '#219EBC'
     bg-secondary-color: '#ffffff'
-    featured-color: '#227'
+    featured-color: '#FFB703'
     text-color: '#262626'
-  - scheme_name: footer
-    bg-color: '#1d1d1b'
-    bg-secondary-color: '#2d2d2b'
-    featured-color: '#227'
+  - scheme-name: footer
+    bg-color: '#023047'
+    bg-secondary-color: '#FFB703'
+    featured-color: '#219EBC'
     text-color: '#ffffff'

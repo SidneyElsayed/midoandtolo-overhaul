@@ -85,6 +85,7 @@ _inputs:
         - center
         - right
     cascade: true
+  
 
 _structures:
   blocks:
@@ -99,7 +100,7 @@ _structures:
           horizontal-placement: center
           vertical-placement: center
           text-alignment: center
-          scheme-color: dark
+          scheme-name: dark
       - label: banner
         value:
           id: banner 
@@ -114,7 +115,73 @@ _structures:
           overlay:
             color: 
             opacity: 
-  
+      - label: cards
+        value:
+          id: cards
+          section-heading_html: heading
+          card-description: true
+          text-alignment: left
+          card-loop:
+            - image: /images/message-in-a-bottle.jpg
+              alt:
+              heading: Service 1
+              text: >-
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                audantium, dolor blanditiis!
+              button-text:
+              button-link:
+            - image: images/barrels.jpg
+              alt:
+              heading: Service 2
+              text: >-
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                audantium, dolor blanditiis!
+              button-text:
+              button-link:
+            - image: images/map.jpg
+              alt:
+              heading: Service 3
+              text: >-
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                audantium, dolor blanditiis!
+              button-text:
+              button-link:
+          scheme-name: base
+      - label: text banner
+            value:
+              id: text-banner
+              heading_html:
+              text_html:
+              large-text-width:
+              paragraph-width:
+              large-text-placement:
+              large-text-alignment:
+              paragraph-text-alignment:
+              button-alignment:
+              button-1-text:
+              button-1-link:
+              button-2-text:
+              button-2-link:
+              scheme-name:
+      - label: image text
+        value:
+          id: image-text
+          section-heading_html:
+          text-block-heading_html: Heading
+          description_html: Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                audantium, dolor blanditiis!
+          button-1-text: Learn more
+          button-1-link: /about
+          button-2-text:
+          button-2-link:
+          image: /images/mido-zouzou-balloon.jpeg
+          image-placement: left
+          image-horizontal-focal-point: center
+          image-vertical-focal-point: top
+          text-placement: center
+          large-text-alignment: center
+          scheme-name: base
+      
   
   
   
