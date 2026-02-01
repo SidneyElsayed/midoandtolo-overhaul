@@ -129,6 +129,58 @@ h3 {
   font-size: 24px;
 } */
 
+/* ----------- Navigation/Hamburger Button -------------- */
+.hamburger-button {
+  cursor: pointer;
+  font-size: 2.5rem;
+  line-height: 0.8;
+  position: relative;
+  z-index: 30;
+}
+
+.hamburger-button:hover {
+color: var(--featured-color-light-yellow)
+}
+
+/* Styles when the hamburger button is active  */
+.hamburger-button.active {
+color: var(--featured-color-light-blue);
+}
+
+.hamburger-button.active:hover {
+  color: var(--featured-color-light-yellow);
+  }
+
+
+.mobile-menu {
+display: none; 
+background-color: var(--featured-color-dark-blue);
+padding: 5%;
+padding-top: 2rem;
+position: fixed;
+z-index:3;
+top: 0;
+bottom: 0;
+right: 0;
+}
+
+.mobile-menu a {
+text-decoration: none; 
+color: inherit; 
+padding: 2%;
+display: block;
+}
+
+.mobile-menu a:hover {
+color: var(--featured-color-light-blue)
+}
+
+.mobile-menu .title {
+color: var(--featured-color);
+font-weight: 600;
+}
+
+
 /* Backgroun Image Styles */
 
 .landscape     { padding-bottom: 66% ; }

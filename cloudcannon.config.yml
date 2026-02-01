@@ -36,6 +36,23 @@ paths:
         _structures:
         create:
         new_preview_url:
+  posts:
+    path: _posts
+    output: true
+    description: ''
+    icon: notes
+    _editables:
+    _enabled_editors:
+    _inputs:
+    _select_data:
+    _structures:
+    create:
+      path: >-
+        [relative_base_path]/{title|slugify}.[ext]
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+    schemas:
 
 
 _inputs:

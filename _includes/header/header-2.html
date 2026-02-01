@@ -1,36 +1,53 @@
-<header>
-  
-  <div class="max-width mx-auto">
-    <div class="grid grid-cols-2 p-4">
+<header class="sticky top-0 z-30 bg-[var(--bg-color)]">
+<!-- <section id="section-{{forloop.index}}"> -->
+  <div class="">
+
+    <!-- desktop menu -->
+    <nav class="flex justify-between p-3 px-6">
       
-      <div class="col-span-2 md:col-span-1">
-        <a href="/index" class="block justify-center">
-          <img src="/images/mido-tolo-color-logo-b.png" class="md:max-w-[40%] block">
+      <!-- logo -->
+      <div class="content-center">
+        <a href="/index" class="mx-2">
+          <img src="/images/mido-tolo-color-logo-b.png" class="max-w-48 md:max-w-36 block">
         </a>
       </div>
 
-      <nav class="col-span-2 md:col-span-1 justify-center">
+      <!-- links -->
+      <div class="hidden md:flex gap-4 featured-text text-xs mx-0 md:content-center">
       {% for link in site.data.navigation.header-links %}
 
         {% if link.sublinks %}
-          <span class="relative group p-2">
+          <span class="relative group p-2 md:content-center">
         {% endif %}
         
-        <a href="{{link.url}}" class=" p-2 my-4 featured-font">{{link.text}}</a>
+        <a href="{{link.url}}" class=" p-2 my-4 featured-font md:content-center">{{link.text}}</a>
 
         {% if link.sublinks %}
-        <div class="absolute pt-2 top-8 left-0 bg-[var(--bg-color)] hidden group-hover:block z-20">
+        <div class="absolute pt-2 top-14 left-0 bg-[var(--bg-color)] hidden group-hover:block z-20">
           {% for sublink in link.sublinks %}
-            <a href="{{sublink.url}}" class="px-2 whitespace-pre block body-font">{{sublink.text}}</a>
+            <a href="{{sublink.url}}" class="py-2 px-4 whitespace-pre block body-font">{{sublink.text}}</a>
           {% endfor %}
         </div>
           </span>
         {% endif %}
 
       {% endfor %}
+      </div>
+
+      <!-- hamburger button -->
+      <div class="md:hidden">
+        <a class="hamburger-button md:hidden"> &#9776; </a>
+      </div>
+
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu text-left overflow-y-scroll max-h-[100vh] max-w-52">
+      <nav class="relative">
+        <a href="{{link.url}}" class=" p-2 my-4 featured-font">{{link.text}}</a>
       </nav>
-
     </div>
-  </div>
 
+  </div>
+<!-- </section> -->
 </header>
