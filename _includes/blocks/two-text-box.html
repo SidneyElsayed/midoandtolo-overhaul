@@ -1,0 +1,83 @@
+<section id="section-{{forloop.index}}">
+  <div class="max-width mx-auto sm:px-14 py-20 {% if block.hide-bottom-padding %} pb-0 lg:pb-16 {% endif %}">
+
+  <!-- Actual content starts here, so that the above has the max width -->
+
+  
+  <div class="grid grid-cols-2">
+
+    {% for item in block.text-loop %}
+    <!-- Text Block -->
+    <div class=" col-span-2 lg:col-span-1 pt-20 lg:pt-0 {% if item.text-placement == 'top' %} self-start {% elsif item.text-placement == 'center' %} self-center {% elsif item.text-placement == 'bottom' %} self-end {% endif %} 
+    
+    {% if item.color-placement == 'right' %} lg:pr-12 lg:order-first {% else %} lg:pl-12 {% endif %}">
+
+
+      <!-- Text Block Heading -->
+      {% if item.heading_html %}
+      <div>
+        <div class="pb-6 featured-text {% if block.heading-has-long-words %} heading-has-long-words {% endif %}">{{item.heading_html }}</div>
+      </div>
+      {% endif %}
+
+      <!-- Description -->
+      {% if item.description_html %}
+      <div>
+        <div class="pb-4 font-thin lg:text-lg">{{item.description_html}}</div>
+      </div>
+      {% endif %}
+
+      
+      <!-- Buttons -->
+      <div class="pt-3">
+        {% if item.button-1-link and item.button-1-text %}
+        <a href="{{item.button-1-link}}" class="px-4 py-2 my-2 mr-4 relative button-1 {{block.button-1-bg}} button-featured curve-point-left-sm" {% if item.button-1-link contains 'http' %} target="_blank" {% endif %}>{{item.button-1-text}}</a>
+        {% endif %}
+
+        {% if item.button-2-link and item.button-2-text %}
+        <a href="{{item.button-2-link}}" class="my-4 relative button-2 {{item.button-2-bg}} button-featured curve-point-right-sm" {% if item.button-2-link contains 'http' %} target="_blank" {% endif %}>{{item.button-2-text}}</a>
+        {% endif %}
+      </div>
+    </div>
+    {% endif %}
+
+    {% for item in block.text-loop-2 %}
+    <!-- Text Block -->
+    <div class=" col-span-2 lg:col-span-1 pt-20 lg:pt-0 {% if item.text-placement == 'top' %} self-start {% elsif item.text-placement == 'center' %} self-center {% elsif item.text-placement == 'bottom' %} self-end {% endif %} 
+    
+    {% if item.color-placement == 'right' %} lg:pr-12 lg:order-first {% else %} lg:pl-12 {% endif %}">
+
+
+      <!-- Text Block Heading -->
+      {% if item.heading_html %}
+      <div>
+        <div class="pb-6 featured-text {% if block.heading-has-long-words %} heading-has-long-words {% endif %}">{{item.heading_html }}</div>
+      </div>
+      {% endif %}
+
+      <!-- Description -->
+      {% if item.description_html %}
+      <div>
+        <div class="pb-4 font-thin lg:text-lg">{{item.description_html}}</div>
+      </div>
+      {% endif %}
+
+      
+      <!-- Buttons -->
+      <div class="pt-3">
+        {% if item.button-1-link and item.button-1-text %}
+        <a href="{{item.button-1-link}}" class="px-4 py-2 my-2 mr-4 relative button-1 {{block.button-1-bg}} button-featured curve-point-left-sm" {% if item.button-1-link contains 'http' %} target="_blank" {% endif %}>{{item.button-1-text}}</a>
+        {% endif %}
+
+        {% if item.button-2-link and item.button-2-text %}
+        <a href="{{item.button-2-link}}" class="my-4 relative button-2 {{item.button-2-bg}} button-featured curve-point-right-sm" {% if item.button-2-link contains 'http' %} target="_blank" {% endif %}>{{item.button-2-text}}</a>
+        {% endif %}
+      </div>
+    </div>
+    {% endif %}
+    
+  </div>
+
+  <!-- Don't delete the below; these are for the starting id and class above -->
+  </div>
+</section>

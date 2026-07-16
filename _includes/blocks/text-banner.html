@@ -2,10 +2,10 @@
   <div class="max-width mx-auto">
 
   <!-- Actual content starts here, so that the above has the max width -->
-  <div class="grid grid-cols-2 gap-1 px-8 sm:px-16 py-16">
+  <div class="grid grid-cols-2 gap-12 px-8 sm:px-16 py-16">
     <!-- Large Text -->
     {% if block.heading_html %}
-    <div class="
+    <div class="text-block-heading
 
     {% if block.large-text-width == 'full' %} col-span-2 {% elsif block.large-text-width == 'half' %} col-span-2 md:col-span-1 {% endif %}
 
@@ -18,7 +18,7 @@
     {% endif %}
 
     <!-- Paragraphs -->
-    <div class="lg:text-lg {% if block.paragraph-width == 'full' %} col-span-2 {% elsif block.paragraph-width == 'half' %} col-span-2 md:col-span-1 {% endif %} 
+    <div class="lg:text-xl {% if block.paragraph-width == 'full' %} col-span-2 {% elsif block.paragraph-width == 'half' %} col-span-2 md:col-span-1 {% endif %} 
     
     {% if block.large-text-placement == 'right' %} md:order-first {% endif %}
     
@@ -32,11 +32,11 @@
       <!-- Buttons -->
       <div class="pt-3 {% if block.button-alignment == 'left' %} text-left {% elsif block.button-alignment == 'center' %} text-center {% elsif block.button-alignment == 'right' %} text-right {% endif %}">
         {% if block.button-1-link and block.button-1-text %}
-        <a href="{{block.button-1-link}}" class="px-4 py-2 my-2 mr-4 relative button-1 {{block.button-1-bg}}">{{block.button-1-text}}</a>
+        <a href="{{block.button-1-link}}" class="px-4 py-2 my-2 mr-4 relative curve-point-right-sm featured-font button-1 {{block.button-1-bg}}">{{block.button-1-text}}</a>
         {% endif %}
 
         {% if block.button-2-link and block.button-2-text %}
-        <a href="{{block.button-2-link}}" class="px-4 py-2 my-2 relative button-2 {{block.button-2-bg}}">{{block.button-2-text}}</a>
+        <a href="{{block.button-2-link}}" class="px-4 py-2 my-2 relative curve-point-right-sm featured-font button-2 {{block.button-2-bg}}">{{block.button-2-text}}</a>
         {% endif %}
       </div>
 
