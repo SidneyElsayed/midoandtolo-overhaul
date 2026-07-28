@@ -3,7 +3,7 @@
   <div class="">
 
     <!-- desktop menu -->
-    <nav class="flex justify-between p-3 px-6">
+    <div class="flex justify-between p-3 px-6">
       
       <!-- logo -->
       <div class="content-center">
@@ -13,7 +13,7 @@
       </div>
 
       <!-- links -->
-      <div class="hidden md:flex gap-4 featured-text text-xs mx-0 md:content-center">
+      <nav class="hidden md:flex gap-4 featured-text text-xs mx-0 md:content-center">
       {% for link in site.data.navigation.header-links %}
 
         {% if link.sublinks %}
@@ -32,22 +32,26 @@
         {% endif %}
 
       {% endfor %}
-      </div>
+      </nav>
 
       <!-- hamburger button -->
       <div class="md:hidden">
         <a class="hamburger-button md:hidden"> &#9776; </a>
       </div>
 
-    </nav>
-
-    <!-- Mobile Menu -->
-    <div class="mobile-menu text-left overflow-y-scroll max-h-[100vh] max-w-52">
-      <nav class="relative">
-        <a href="{{link.url}}" class=" p-2 my-4 featured-font">{{link.text}}</a>
-      </nav>
     </div>
+    <!-- end desktop menu -->
 
+    <!-- mobile menu -->
+    <div class="md:hidden">
+      <div class="mobile-menu text-left overflow-y-scroll max-h-[100vh] w-1/2">
+        <nav class="relative">
+          {% for link in site.data.navigation.header-links %}
+          <a href="{{link.url}}" class=" p-2 my-4 featured-font">{{link.text}}</a>
+          {% endfor %}
+        </nav>
+      </div>
+    </div>
   </div>
 <!-- </section> -->
 </header>
