@@ -9,8 +9,9 @@ author: Sidney
 read: 5 min
 featured: true
 categories:
-    - saudi arabia
     - stories
+    - saudi arabia
+    - cultural insights
 categories-shown: 2
 featured_image: /images/date-palms-from-below-alula.jpg
 seo:

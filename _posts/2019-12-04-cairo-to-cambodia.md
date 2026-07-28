@@ -9,8 +9,9 @@ author: Sidney
 read: 5 min
 featured: true
 categories:
-    - egypt
     - stories
+    - egypt
+    - cultural insights
 categories-shown: 2
 featured_image: /images/bowl-of-soup-cambodia.jpg
 seo:

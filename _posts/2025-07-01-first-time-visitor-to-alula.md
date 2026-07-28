@@ -11,6 +11,7 @@ featured: true
 categories:
     - saudi arabia
     - travel
+    - cultural insights
     - saudi arabia travel tips
     - logistics
 categories-shown: 2

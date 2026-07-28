@@ -9,8 +9,8 @@ author: Sidney
 read: 5 min
 featured: true
 categories:
-    - saudi arabia
     - stories
+    - saudi arabia
 categories-shown: 2
 featured_image: /images/mido-zouz-balloon.jpg
 seo:

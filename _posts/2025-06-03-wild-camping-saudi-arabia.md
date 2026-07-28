@@ -11,9 +11,10 @@ featured: true
 categories:
     - overland
     - saudi arabia
+    - travel
     - saudi arabia travel tips
     - cultural insights
-categories-shown: 2
+categories-shown: 3
 featured_image: /images/raptor-beach-sunset.jpg
 seo:
     title: Wild Camping Saudi Arabia | Road Trip Guide & Overland Travel Tips 2025

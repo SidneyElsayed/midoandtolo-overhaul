@@ -9,9 +9,8 @@ author: Sidney
 read: 5 min
 featured: true
 categories:
-    - egypt
     - stories
-categories-shown: 2
+categories-shown: 1
 featured_image: /images/tolo-beach-dahab-origin-story.jpg
 seo:
     title: How We Met in Dahab Egypt – Our Love Story Origin | Mido and Tolo
