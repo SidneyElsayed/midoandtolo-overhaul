@@ -1,16 +1,36 @@
 ---
 layout: default
 blocks:
-  - id: rich-text
-    text-html: 404
-    height: 60vh
+  - id: banner 
+    text-html: <h1><strong>404 Wrong turn</strong></h1>
+    height: 20vh
     width: 70%
     horizontal-placement: center
     vertical-placement: center
     text-alignment: center
-    scheme-color: dark
+    image: images/raptor-beach-sunset.jpg
+    alt:
+    overlay:
+      color: white
+      opacity: 40%
+    scheme-name: base
+  - id: text-banner
+    heading_html: 
+    text_html: >-
+      <h2>Happens to the best of us.</h2><p>Let’s get you back to the good stuff.</p>
+    large-text-width: full
+    paragraph-width: full
+    large-text-placement: left
+    large-text-alignment: center
+    paragraph-text-alignment: center
+    button-alignment: center
+    button-1-text: take me home
+    button-1-link: /
+    button-2-text: More travel
+    button-2-link: /travel
+    scheme-name: featured
 seo:
-  title:  
+  title:
   description:
   image:
   favicon:
