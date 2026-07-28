@@ -537,6 +537,9 @@ video {
 .float-right {
     float: right;
 }
+.m-10 {
+    margin: 2.5rem;
+}
 .mx-0 {
     margin-left: 0px;
     margin-right: 0px;

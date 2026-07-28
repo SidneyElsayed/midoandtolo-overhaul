@@ -6,11 +6,11 @@
   
   <div class="grid grid-cols-2">
 
-    {% for item in block.text-loop %}
+    {% for item in block.text-loop-1 %}
     <!-- Text Block -->
-    <div class=" col-span-2 lg:col-span-1 pt-20 lg:pt-0 {% if item.text-placement == 'top' %} self-start {% elsif item.text-placement == 'center' %} self-center {% elsif item.text-placement == 'bottom' %} self-end {% endif %} 
+    <div class=" col-span-2 md:col-span-1 m-10 {% if item.text-placement == 'top' %} self-start {% elsif item.text-placement == 'center' %} self-center {% elsif item.text-placement == 'bottom' %} self-end {% endif %} 
     
-    {% if item.color-placement == 'right' %} lg:pr-12 lg:order-first {% else %} lg:pl-12 {% endif %}">
+    {% if item.color-placement == 'right' %} bg-secondary-color lg:pr-12 lg:order-first {% else %} lg:pl-12 {% endif %}">
 
 
       <!-- Text Block Heading -->
@@ -39,13 +39,11 @@
         {% endif %}
       </div>
     </div>
-    {% endif %}
+    {% endfor %}
 
     {% for item in block.text-loop-2 %}
     <!-- Text Block -->
-    <div class=" col-span-2 lg:col-span-1 pt-20 lg:pt-0 {% if item.text-placement == 'top' %} self-start {% elsif item.text-placement == 'center' %} self-center {% elsif item.text-placement == 'bottom' %} self-end {% endif %} 
-    
-    {% if item.color-placement == 'right' %} lg:pr-12 lg:order-first {% else %} lg:pl-12 {% endif %}">
+    <div class=" col-span-2 md:col-span-1 m-10 {% if item.text-placement == 'top' %} self-start {% elsif item.text-placement == 'center' %} self-center {% elsif item.text-placement == 'bottom' %} self-end {% endif %}">
 
 
       <!-- Text Block Heading -->
@@ -74,7 +72,7 @@
         {% endif %}
       </div>
     </div>
-    {% endif %}
+    {% endfor %}
     
   </div>
 
