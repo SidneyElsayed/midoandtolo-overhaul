@@ -12,8 +12,9 @@ read: 5 min
 featured: true
 categories:
     - egypt
+    - travel
     - food
-categories-shown: 2
+categories-shown: 3
 featured_image: /images/tolo-in-moaz-street.jpg
 seo:
     title: 24 Hours in Cairo, Egypt | A Local's Guide to an Authentic Cairo Experience 2025

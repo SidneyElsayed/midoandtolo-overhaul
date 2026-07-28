@@ -10,9 +10,10 @@ read: 5 min
 featured: true
 categories:
     - saudi arabia
+    - travel
     - saudi arabia travel tips
     - logistics
-categories-shown: 1
+categories-shown: 2
 featured_image: /images/mido-zouzou-oasis.jpg
 seo:
     title: AlUla Travel Guide 2025 | First-Time Visitor Tips for Saudi Arabia

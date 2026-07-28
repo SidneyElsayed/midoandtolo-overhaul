@@ -23,7 +23,7 @@
   <div class="bg-[var(--featured-color-v-light-yellow)] curve-point-right-sm mb-4 p-4">
       <h4 class="mt-2 featured-font"> Explore Categories </h4>
       <nav class="hover-white"> 
-          {% for cat in site.archives limit:8 %}
+          {% for cat in site.archives %}
           {% if cat.main-category == true %}
           <a href="{{cat.url}}" class="tag"> {{cat.category}}</a>
           {% endif %}

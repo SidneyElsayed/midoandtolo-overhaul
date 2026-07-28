@@ -11,7 +11,7 @@ featured: true
 categories:
     - egypt
     - stories
-categories-shown: 1
+categories-shown: 2
 featured_image: /images/bowl-of-soup-cambodia.jpg
 seo:
     title: How We Met in Dahab Egypt – Our Love Story Origin | Mido and Tolo
