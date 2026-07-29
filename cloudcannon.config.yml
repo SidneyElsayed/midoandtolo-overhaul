@@ -139,7 +139,7 @@ _structures:
           card-description: true
           text-alignment: left
           card-loop:
-            - image: /images/message-in-a-bottle.jpg
+            - image: 
               alt:
               heading: Service 1
               text: >-
@@ -147,7 +147,7 @@ _structures:
                 audantium, dolor blanditiis!
               button-text:
               button-link:
-            - image: images/barrels.jpg
+            - image: 
               alt:
               heading: Service 2
               text: >-
@@ -155,7 +155,7 @@ _structures:
                 audantium, dolor blanditiis!
               button-text:
               button-link:
-            - image: images/map.jpg
+            - image: 
               alt:
               heading: Service 3
               text: >-
