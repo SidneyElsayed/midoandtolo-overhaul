@@ -165,21 +165,21 @@ _structures:
               button-link:
           scheme-name: base
       - label: text banner
-            value:
-              id: text-banner
-              heading_html:
-              text_html:
-              large-text-width:
-              paragraph-width:
-              large-text-placement:
-              large-text-alignment:
-              paragraph-text-alignment:
-              button-alignment:
-              button-1-text:
-              button-1-link:
-              button-2-text:
-              button-2-link:
-              scheme-name:
+        value:
+          id: text-banner
+          heading_html:
+          text_html:
+          large-text-width:
+          paragraph-width:
+          large-text-placement:
+          large-text-alignment:
+          paragraph-text-alignment:
+          button-alignment:
+          button-1-text:
+          button-1-link:
+          button-2-text:
+          button-2-link:
+          scheme-name:
       - label: image text
         value:
           id: image-text
