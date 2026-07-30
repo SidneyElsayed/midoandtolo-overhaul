@@ -36,6 +36,7 @@ paths:
         _structures:
         create:
         new_preview_url:
+
   posts:
     path: _posts
     output: true
@@ -54,16 +55,17 @@ paths:
     disable_file_actions: false
     schemas:
 
-
 _inputs:
   layout:
     type: text
     hidden: true
     cascade: true
+
   id:
     type: text
     hidden: true
     cascade: true
+
   text-html:
     type: html
     options:
@@ -83,6 +85,7 @@ _inputs:
       styles: /editor.css
     label: Content
     cascade: true
+
   min-height:
     type: select
     options:
@@ -93,6 +96,7 @@ _inputs:
         90vh: just short of full screen
         100vh: full screen
     cascade: true
+
   text-alignment:
     type: select
     options:
@@ -102,7 +106,6 @@ _inputs:
         - center
         - right
     cascade: true
-  
 
 _structures:
   blocks:
@@ -110,7 +113,7 @@ _structures:
     values:
       - label: text block
         value:
-          id: rich-text 
+          id: rich-text
           text-html: Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis deserunt, doloribus incidunt beatae id distinctio consectetur aut fugiat magnam, nam maiores exercitationem reiciendis molestiae tempora quaerat cumque itaque possimus dolore?
           height: 95vh
           width: 33%
@@ -118,9 +121,10 @@ _structures:
           vertical-placement: center
           text-alignment: center
           scheme-name: dark
+
       - label: banner
         value:
-          id: banner 
+          id: banner
           text-html: Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis deserunt, doloribus incidunt beatae id distinctio consectetur aut fugiat magnam, nam maiores exercitationem reiciendis molestiae tempora quaerat cumque itaque possimus dolore?
           height: 95vh
           width: 33%
@@ -130,8 +134,9 @@ _structures:
           image: https://picsum.photos/id/1025/600/400
           alt:
           overlay:
-            color: 
-            opacity: 
+            color:
+            opacity:
+
       - label: cards
         value:
           id: cards
@@ -139,7 +144,7 @@ _structures:
           card-description: true
           text-alignment: left
           card-loop:
-            - image: 
+            - image:
               alt:
               heading: Service 1
               text: >-
@@ -147,7 +152,8 @@ _structures:
                 audantium, dolor blanditiis!
               button-text:
               button-link:
-            - image: 
+
+            - image:
               alt:
               heading: Service 2
               text: >-
@@ -155,7 +161,8 @@ _structures:
                 audantium, dolor blanditiis!
               button-text:
               button-link:
-            - image: 
+
+            - image:
               alt:
               heading: Service 3
               text: >-
@@ -164,6 +171,7 @@ _structures:
               button-text:
               button-link:
           scheme-name: base
+
       - label: text banner
         value:
           id: text-banner
@@ -180,13 +188,15 @@ _structures:
           button-2-text:
           button-2-link:
           scheme-name:
+
       - label: image text
         value:
           id: image-text
           section-heading_html:
           text-block-heading_html: Heading
-          description_html: Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-                audantium, dolor blanditiis!
+          description_html: >-
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+            audantium, dolor blanditiis!
           button-1-text: Learn more
           button-1-link: /about
           button-2-text:
@@ -198,24 +208,25 @@ _structures:
           text-placement: center
           large-text-alignment: center
           scheme-name: base
-    - label: accordion
-      value:
-        id: accordion
-        section-heading: This is a heading
-        heading-text-alignment: left
-        faq-text-alignment: left
-        faq-loop:
-          - question: Lorem ipsum dolor sit amet consectetur adipisicing elit?
-            answer-html: Harum tempora rerum debitis! Quo fugiat eius accusamus suscipit dignissimos aspernatur aliquid nisi repellat expedita veritatis saepe, delectus, dolorem consequatur autem fugit.
-          - question: Lorem ipsum dolor sit amet consectetur adipisicing elit?
-            answer-html: Harum tempora rerum debitis! Quo fugiat eius accusamus suscipit dignissimos aspernatur aliquid nisi repellat expedita veritatis saepe, delectus, dolorem consequatur autem fugit.
-          - question: Lorem ipsum dolor sit amet consectetur adipisicing elit?
-            answer-html: Harum tempora rerum debitis! Quo fugiat eius accusamus suscipit dignissimos aspernatur aliquid nisi repellat expedita veritatis saepe, delectus, dolorem consequatur autem fugit.
-        scheme-name: 
-      
-  
-  
-  
+
+      - label: accordion
+        value:
+          id: accordion
+          section-heading: This is a heading
+          heading-text-alignment: left
+          faq-text-alignment: left
+          faq-loop:
+            - question: Lorem ipsum dolor sit amet consectetur adipisicing elit?
+              answer-html: Harum tempora rerum debitis! Quo fugiat eius accusamus suscipit dignissimos aspernatur aliquid nisi repellat expedita veritatis saepe, delectus, dolorem consequatur autem fugit.
+
+            - question: Lorem ipsum dolor sit amet consectetur adipisicing elit?
+              answer-html: Harum tempora rerum debitis! Quo fugiat eius accusamus suscipit dignissimos aspernatur aliquid nisi repellat expedita veritatis saepe, delectus, dolorem consequatur autem fugit.
+
+            - question: Lorem ipsum dolor sit amet consectetur adipisicing elit?
+              answer-html: Harum tempora rerum debitis! Quo fugiat eius accusamus suscipit dignissimos aspernatur aliquid nisi repellat expedita veritatis saepe, delectus, dolorem consequatur autem fugit.
+
+          scheme-name:
+
   header_links:
     style: modal
     values:
@@ -223,6 +234,7 @@ _structures:
         value:
           link: /
           text: home
+
       - label: link with sublinks
         value:
           text: home
@@ -230,7 +242,9 @@ _structures:
           sub_links:
             - text: sublink 1
               link: /
+
             - text: sublink 2
               link: /
+
             - text: sublink 3
               link: /
