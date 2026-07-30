@@ -199,19 +199,19 @@ _structures:
           large-text-alignment: center
           scheme-name: base
     - label: accordion
-        value:
-          id: accordion
-          section-heading: This is a heading
-          heading-text-alignment: left
-          faq-text-alignment: left
-          faq-loop:
-            - question: Lorem ipsum dolor sit amet consectetur adipisicing elit?
-              answer-html: Harum tempora rerum debitis! Quo fugiat eius accusamus suscipit dignissimos aspernatur aliquid nisi repellat expedita veritatis saepe, delectus, dolorem consequatur autem fugit.
-            - question: Lorem ipsum dolor sit amet consectetur adipisicing elit?
-              answer-html: Harum tempora rerum debitis! Quo fugiat eius accusamus suscipit dignissimos aspernatur aliquid nisi repellat expedita veritatis saepe, delectus, dolorem consequatur autem fugit.
-            - question: Lorem ipsum dolor sit amet consectetur adipisicing elit?
-              answer-html: Harum tempora rerum debitis! Quo fugiat eius accusamus suscipit dignissimos aspernatur aliquid nisi repellat expedita veritatis saepe, delectus, dolorem consequatur autem fugit.
-          scheme-name: 
+      value:
+        id: accordion
+        section-heading: This is a heading
+        heading-text-alignment: left
+        faq-text-alignment: left
+        faq-loop:
+          - question: Lorem ipsum dolor sit amet consectetur adipisicing elit?
+            answer-html: Harum tempora rerum debitis! Quo fugiat eius accusamus suscipit dignissimos aspernatur aliquid nisi repellat expedita veritatis saepe, delectus, dolorem consequatur autem fugit.
+          - question: Lorem ipsum dolor sit amet consectetur adipisicing elit?
+            answer-html: Harum tempora rerum debitis! Quo fugiat eius accusamus suscipit dignissimos aspernatur aliquid nisi repellat expedita veritatis saepe, delectus, dolorem consequatur autem fugit.
+          - question: Lorem ipsum dolor sit amet consectetur adipisicing elit?
+            answer-html: Harum tempora rerum debitis! Quo fugiat eius accusamus suscipit dignissimos aspernatur aliquid nisi repellat expedita veritatis saepe, delectus, dolorem consequatur autem fugit.
+        scheme-name: 
       
   
   
